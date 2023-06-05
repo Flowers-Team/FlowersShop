@@ -1,0 +1,20 @@
+// ПЕРЕМЕННЫЕ================================================
+$maxWCont: 1245;
+$maxWW: 100%;
+// margin========
+$mt: margin-top;
+$mr: margin-right;
+$mb: margin-bottom;
+$ml: margin-left;
+// padding=========
+$pt: padding-top;
+$pr: padding-right;
+$pb: padding-bottom;
+$pl: padding-left;
+// ==========================================================
+// ОТЗЫВЧИВЫЙ АДАПТИВ========================================
+@mixin singleVar($property, $maxW, $minW){
+	#{$property}: calc(#{$minW + px} + (#{$maxW} - #{$minW}) * (100vw - 320px)/(#{$maxWCont} - 320));
+		@media(min-width: #{$maxWCont + px}){#{$property}: $maxW+px;}
+}
+// ==========================================================
