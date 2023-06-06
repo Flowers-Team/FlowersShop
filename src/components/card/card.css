@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 65.2%;
+}
+
+.content h1 {
+  font-size: 4rem;
+  color: red;
+}
+.content h1:hover {
+  cursor: pointer;
+  color: black;
+}/*# sourceMappingURL=card.css.map */
