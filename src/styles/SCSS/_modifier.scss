@@ -1,45 +1,82 @@
 @import "_mixin.scss";
-@import "../../fonts/comorant/Cormorant-Medium.ttf";
-@import "../../fonts/oswald/Oswald-Medium.ttf";
+// @import "../../fonts/comorant/Cormorant-Bold.ttf";
+// @import "../../fonts/comorant/Cormorant-BoldItalic.ttf";
+// @import "../../fonts/comorant/Cormorant-Italic.ttf";
+// @import "../../fonts/comorant/Cormorant-Light.ttf";
+// @import "../../fonts/comorant/Cormorant-LightItalic.ttf";
+// @import "../../fonts/comorant/Cormorant-Medium.ttf";
+// @import "../../fonts/comorant/Cormorant-MediumItalic.ttf";
+// @import "../../fonts/comorant";
+
+
+
+
+
+// @import "../../fonts/oswald/Oswald-Medium.ttf";
 
 .title {
-  font-style: normal;
-  text-transform: uppercase;
+
 
   &_h1 {
     font-family: "Cormorant";
     font-weight: 300;
-    font-size: 200px;
-    line-height: 242px;
+    font-size: 50px;
+    line-height: 61px;
     letter-spacing: 0.2em;
     color: #ffffff;
+    font-style: normal;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 200px;
+      line-height: 242px; 
+    }
   }
 
   &_h2 {
     font-family: "Cormorant";
     font-weight: 400;
-    font-size: 100px;
-    line-height: 121px;
+    font-size: 40px;
+    line-height: 48px;
     letter-spacing: 0.02em;
     color: #ffffff;
+    font-style: normal;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 100px;
+      line-height: 121px;
+    }
   }
 
   &_h3_green {
     font-family: "Oswald";
     font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 20px;
+    line-height: 30px;
     letter-spacing: 0.04em;
     color: #43ffd2;
+    font-style: normal;
+    text-transform: uppercase;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 44px;
+    }
   }
 
   &_h3_pink {
     font-family: "Oswald";
     font-weight: 700;
-    font-size: 30px;
-    line-height: 44px;
+    font-size: 12px;
+    line-height: 18px;
     letter-spacing: 0.04em;
     color: #d978ac;
+
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 44px;
+    }
   }
 }
 
@@ -49,10 +86,15 @@
 
   &_subtitle {
     font-weight: 300;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 14px;
+    line-height: 21px;
     letter-spacing: 0.04em;
     color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &_subtitle_upper {
@@ -62,6 +104,11 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 27px;
+    }
   }
 
   &_subtitle_upper_pink {
@@ -72,6 +119,11 @@
     text-decoration-line: underline;
     text-transform: uppercase;
     color: #d978ac;
+
+    @media (min-width: 768px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
   }
 }
 

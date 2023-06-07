@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Relative';
+    src: url('Relative.eot');
+    src: url('Relative.eot?#iefix') format('embedded-opentype'),
+        url('Relative.woff2') format('woff2'),
+        url('Relative.woff') format('woff'),
+        url('Relative.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
