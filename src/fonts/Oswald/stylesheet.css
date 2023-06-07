@@ -1,0 +1,51 @@
+@font-face {
+	font-family: 'Oswald';
+	src: url('oswald_extralight.eot');
+	src: url('oswald_extralight.eot?#iefix') format('embedded-opentype'),
+		url('oswald_extralight.woff2') format('woff2'),
+		url('oswald_extralight.woff') format('woff'),
+		url('oswald_extralight.ttf') format('truetype'),
+		url('oswald_extralight.svg#oswald_extralight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('oswald_light.eot');
+	src: url('oswald_light.eot?#iefix') format('embedded-opentype'),
+		url('oswald_light.woff2') format('woff2'),
+		url('oswald_light.woff') format('woff'),
+		url('oswald_light.ttf') format('truetype'),
+		url('oswald_light.svg#oswald_light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('oswald_regular.eot');
+	src: url('oswald_regular.eot?#iefix') format('embedded-opentype'),
+		url('oswald_regular.woff2') format('woff2'),
+		url('oswald_regular.woff') format('woff'),
+		url('oswald_regular.ttf') format('truetype'),
+		url('oswald_regular.svg#oswald_regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Oswald';
+	src: url('oswald_bold.eot');
+	src: url('oswald_bold.eot?#iefix') format('embedded-opentype'),
+		url('oswald_bold.woff2') format('woff2'),
+		url('oswald_bold.woff') format('woff'),
+		url('oswald_bold.ttf') format('truetype'),
+		url('oswald_bold.svg#oswald_bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

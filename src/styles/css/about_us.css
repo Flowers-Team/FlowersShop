@@ -1,0 +1,296 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul[class] {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background: #040A0A;
+}
+
+.about__us {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 10px;
+}
+
+
+.about__us__bred_crumbs {
+    margin: 20px 0;
+    position: relative;
+
+}
+
+.about__us__bred_crumbs::before {
+    content: "";
+    position: absolute;
+    top: -133px;
+    left: -154px;
+    background: #C8A156;
+    filter: blur(100px);
+    transform: rotate(-71.86deg);
+    z-index: -1;
+    width: 274px;
+    height: 220px;
+}
+
+
+
+.about__us__bred_crumbs-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 92px;
+}
+
+.about__us__bred_crumbs-item a {
+
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.about__us__bred_crumbs-item:nth-child(1):after {
+    content: "/";
+    margin: 0 4px;
+    color: #FFFFFF;
+
+}
+
+.about__us_title {
+    font-family: 'Cormorant', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-left: 51px;
+    margin-bottom: 89px;
+}
+
+.about__us__content:before {
+    background-image: url('../../img/about_us/bg_top_right.png');
+    left: 43%;
+    top: -35px;
+}
+
+.about__us__content:before,
+.about__us__content:after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 356px;
+    width: 110%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about__us__content:after {
+    background-image: url('../../img/about_us/bg_top_left.png');
+    right: 60%;
+    top: -21px;
+
+}
+
+.content__description_of_values_wrap {
+    position: relative;
+    z-index: 2;
+
+}
+
+.content__description_of_values_wrap::before {
+    content: "";
+    position: absolute;
+    top: 185px;
+    left: -56px;
+    width: 100%;
+    height: 100%;
+    background: #C8A156;
+    filter: blur(100px);
+    transform: rotate(-71.86deg);
+    z-index: -1;
+    width: 230.43px;
+    height: 184.67px;
+}
+
+
+.about__us__content-title {
+    max-width: 112px;
+    font-family: 'Cormorant', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #43FFD2;
+    margin-bottom: 10px;
+}
+
+.about__us__content-subtitle {
+    max-width: 239px;
+    width: 100%;
+    letter-spacing: 0.04em;
+}
+
+.content__description_of_values {
+    padding: 10px 0 10px 10px;
+    max-width: 249px;
+    width: 100%;
+    margin-left: 51px;
+    margin-bottom: 60px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.about__us__content-title span {
+    margin-left: 10px;
+}
+
+.content__description-subtitle {
+    max-width: 207px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.content__guarantees {
+    margin-bottom: 60px;
+}
+
+.content__guarantees-subtitle {
+    max-width: 300px;
+    text-transform: uppercase;
+}
+
+.content__advantages {
+    margin-bottom: 66px;
+
+}
+
+.advantages_title {
+    max-width: 225px;
+}
+
+ul.content__advantages-lists {
+    max-width: 262px;
+    margin-left: 15px;
+    list-style: disc;
+}
+
+.content__quote {
+    margin-bottom: 110px;
+    position: relative;
+    background-image: url(../../img/about_us/bg_top_bottom.png);
+    background-repeat: no-repeat;
+    width: 437px;
+    background-position: 19px -149px;
+}
+
+.content__quote::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -24px;
+    background: #C8A156;
+    filter: blur(100px);
+    transform: rotate(-72deg);
+    z-index: -1;
+    width: 225px;
+    height: 180px;
+}
+
+.content__quote::after {
+    content: "";
+    position: absolute;
+    top: 343px;
+    left: -124px;
+    background: #C8A156;
+    filter: blur(50px);
+    transform: rotate(21deg);
+    z-index: -1;
+    width: 258px;
+    height: 106px;
+}
+
+.content__quote-txt {
+    max-width: 270px;
+    font-family: 'Cormorant', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+
+}
+
+.content__quote-subtitle {
+    max-width: 182px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
