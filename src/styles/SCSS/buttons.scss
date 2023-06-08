@@ -1,0 +1,223 @@
+/*
+
+<button class="button__[название кнопки] button__[название кнопки]-disabled">
+    <span class="spinner"></span>
+        [Текст кнопки]
+</button>
+
+Я назвал их собственно по тому, как они указаны UI kit
+Кнопка "Смотреть каталог" имеет класс button__catalog
+Кнопка "В корзину" имеет класс button__basket
+
+Кнопки есть двух видов по ширине: 220рх и 255рх
+Так же они различаются по оформлению и поведению
+С данными классами работает свойство :hover и :active
+
+Если необходимо перевести кнопкку в состояние Progress или Disabled, 
+то надо добавить соответствующий класс-модификатор к классу данной кнопки
+button__[название кнопки]-disabled
+button__[название кнопки]-progress
+
+Предусмотрен вариант работы как с тегом <div>, так и с тегом <button>
+С тегом <input> данная кнопка не работает. Пока... Может выйдет вторая версия...
+
+Тег <span> добавлен для отображения анимации спиннера прогресса
+
+*/
+
+/* Кнопки серии Смотреть каталог */
+.button__catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 50px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #43ffd2;
+    color: #040a0a;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: #fff;
+        background-color: #7d2253;
+    }
+
+    &:active {
+        background-color: #7d2253;
+        box-shadow: inset 0px 0px 10px #1b000e;
+        border-radius: 3px;
+    }
+
+    &.button__catalog-disabled {
+        border: 1px solid #555555;
+        color: #555555;
+        background-color: #040a0a00;
+        cursor: help;
+    }
+
+    &.button__catalog-progress {
+        position: relative;
+        cursor: progress;
+
+        &:hover,
+        &:active {
+            color: #040a0a;
+            background-color: #43ffd2;
+            box-shadow: inherit;
+            border-radius: inherit;
+            border: inherit;
+        }
+
+        & > span {
+            position: absolute;
+            top: 19px;
+            left: 40px;
+            width: 12px;
+            aspect-ratio: 1;
+            display: grid;
+            border-radius: 50%;
+            background: linear-gradient(
+                        0deg,
+                        rgba(0, 0, 0, 0.5) 30%,
+                        #00000000 0 70%,
+                        rgb(0, 0, 0) 0
+                    )
+                    50%/8% 100%,
+                linear-gradient(
+                        90deg,
+                        rgba(0, 0, 0, 0.25) 30%,
+                        #00000000 0 70%,
+                        rgba(0, 0, 0, 0.75) 0
+                    )
+                    50%/100% 8%;
+            background-repeat: no-repeat;
+            animation: spinnerAnimation 1s infinite steps(12);
+        }
+        .spinner::before,
+        .spinner::after {
+            content: "";
+            grid-area: 1/1;
+            border-radius: 50%;
+            background: inherit;
+            opacity: 0.915;
+            transform: rotate(30deg);
+        }
+        .spinner::after {
+            opacity: 0.83;
+            transform: rotate(60deg);
+        }
+
+        @keyframes spinnerAnimation {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    }
+}
+
+/* Кнопки серии Корзина */
+.button__basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    height: 50px;
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #040a0a;
+    color: #fff;
+    border: 0.5px solid #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        color: #040a09;
+        background-color: #43ffd2;
+        border: 0.5px solid #43ffd2;
+    }
+
+    &:active {
+        background-color: #43ffd2;
+        border: 0.5px solid #01281f;
+        box-shadow: inset 0px 0px 10px #01281f;
+        border-radius: 3px;
+    }
+
+    &.button__basket-disabled {
+        border: 1px solid #555555;
+        color: #555555;
+        background-color: #040a0a00;
+        cursor: help;
+    }
+
+    &.button__basket-progress {
+        position: relative;
+        cursor: progress;
+
+        &:hover,
+        &:active {
+            color: #fff;
+            background-color: #040a0a;
+            border: 0.5px solid #ffffff;
+            box-shadow: inherit;
+            border-radius: inherit;
+        }
+
+        & > span {
+            position: absolute;
+            top: 18px;
+            left: 75px;
+            width: 12px;
+            aspect-ratio: 1;
+            display: grid;
+            border-radius: 50%;
+            background: linear-gradient(
+                        0deg,
+                        rgba(255, 255, 255, 0.5) 30%,
+                        #ffffff00 0 70%,
+                        rgb(255, 255, 255) 0
+                    )
+                    50%/8% 100%,
+                linear-gradient(
+                        90deg,
+                        rgba(255, 255, 255, 0.25) 30%,
+                        #ffffff00 0 70%,
+                        rgba(255, 255, 255, 0.75) 0
+                    )
+                    50%/100% 8%;
+            background-repeat: no-repeat;
+            animation: spinnerAnimation 1s infinite steps(12);
+        }
+        .spinner::before,
+        .spinner::after {
+            content: "";
+            grid-area: 1/1;
+            border-radius: 50%;
+            background: inherit;
+            opacity: 0.915;
+            transform: rotate(30deg);
+        }
+        .spinner::after {
+            opacity: 0.83;
+            transform: rotate(60deg);
+        }
+
+        @keyframes spinnerAnimation {
+            100% {
+                transform: rotate(1turn);
+            }
+        }
+    }
+}
