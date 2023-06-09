@@ -296,9 +296,229 @@ ul.content__advantages-lists {
 }
 
 
-@media (min-width: 1200px) {
+
+
+
+@media (min-width: 576px) {
     .container {
-        max-width: 1120px;
+        max-width: 550px;
+    }
+
+    .about__us_title {
+        font-size: 55px;
+        margin-bottom: 60px;
+    }
+
+    .about__us__content:before {
+        left: 47%;
+        top: -35px;
+    }
+
+    .about__us__content:after {
+        right: 69%;
+    }
+
+    .about__us__content-title {
+        max-width: 150px;
+        font-size: 26px;
+        margin-left: 51px;
+    }
+
+    .about__us__content-subtitle {
+        max-width: 455px;
+        font-size: 16px;
+
+    }
+
+    .content__description_of_values {
+        max-width: 392px;
+        margin-left: 149px;
+    }
+
+    .content__description_of_values_wrap::before {
+        left: 42px;
+    }
+
+    .content__description-subtitle {
+        max-width: 455px;
+        font-size: 15px;
+    }
+
+    .content__guarantees-subtitle {
+        max-width: 418px;
+        margin-left: 51px;
+        font-size: 15px;
+
+    }
+
+    .advantages_title {
+        max-width: 335px;
+    }
+
+    ul.content__advantages-lists {
+        max-width: 385px;
+        margin-left: 149px;
+        font-size: 15px;
+
+    }
+
+    .content__quote::before {
+        left: 126px;
+    }
+
+    .content__quote {
+        width: 581px;
+        background-position: 130px -168px;
+        background-size: cover;
+    }
+
+    .content__quote-txt {
+        max-width: 500px;
+        font-size: 26px;
+    }
+
+    .content__quote-subtitle {
+        max-width: 305px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .about__us_title {
+        font-size: 55px;
+        margin-bottom: 60px;
+        font-size: 58px;
+
+    }
+
+    .about__us__content:before {
+        background-image: url('../../img/about_us/bg_top_right_big.png');
+        left: 40%;
+        top: -35px;
+        z-index: -1;
+        max-width: 586px;
+
+    }
+
+    .about__us__content:after {
+        background-image: url('../../img/about_us/bg_top_left_big.png');
+        right: 52%;
+        top: -73px;
+        max-width: 836px;
+    }
+
+    .about__us__content-title {
+        max-width: 168px;
+        font-size: 32px;
+        margin-left: 120px;
+        margin-bottom: 40px;
+    }
+
+    .about__us__content-subtitle {
+        max-width: 482px;
+        font-size: 18px;
+    }
+
+    .content__description_of_values {
+        max-width: 495px;
+        margin-left: 235px;
+    }
+
+
+    .content__description_of_values_wrap::before {
+        left: 146px;
+    }
+
+    .content__description-subtitle {
+        max-width: 490px;
+        font-size: 18px;
+    }
+
+    .content__guarantees-subtitle {
+        max-width: 578px;
+        margin-left: 119px;
+        font-size: 18px;
+
+    }
+
+    .advantages_title {
+        max-width: 370px;
+    }
+
+    ul.content__advantages-lists {
+        max-width: 470px;
+        margin-left: 235px;
+        font-size: 18px;
+
+    }
+
+    .wrap_content__quote_background:after {
+        content: "";
+        position: absolute;
+        background-image: url(../../img/about_us/bg_top_bottom_big.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 999px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        right: -17%;
+        top: -426px;
+    }
+
+    .content__quote {
+        width: 730px;
+        background-image: none;
+
+    }
+
+    .content__quote::before {
+        content: "";
+        position: absolute;
+        top: -12px;
+        left: 256px;
+        background: #C8A156;
+        filter: blur(100px);
+        transform: rotate(-72deg);
+        z-index: -1;
+        width: 225px;
+        height: 180px;
+    }
+
+    .content__quote::after {
+        content: "";
+        position: absolute;
+        top: 343px;
+        left: -124px;
+        background: #C8A156;
+        filter: blur(75px);
+        transform: rotate(21deg);
+        z-index: -1;
+        width: 258px;
+        height: 106px;
+    }
+
+    .content__quote-txt {
+        max-width: 624px;
+        font-size: 37px;
+    }
+
+    .content__quote-subtitle {
+        max-width: 348px;
+        font-size: 18px;
+        margin-left: 120px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 900px;
 
     }
 
@@ -307,23 +527,21 @@ ul.content__advantages-lists {
     }
 
     .about__us_title {
-        font-size: 100px;
+        font-size: 90px;
         margin-left: 95px;
         margin-bottom: 98px;
     }
 
     .about__us__content:before {
-        background-image: url('../../img/about_us/bg_top_right_big.png');
         left: 47%;
         top: -35px;
         z-index: 3;
-        max-width: 841px;
+        max-width: 802px;
 
     }
 
     .about__us__content:after {
-        background-image: url('../../img/about_us/bg_top_left_big.png');
-        right: 57%;
+        right: 50%;
         top: -73px;
         max-width: 1084px;
     }
@@ -354,7 +572,7 @@ ul.content__advantages-lists {
     .about__us__content-title {
         max-width: 320px;
 
-        font-size: 60px;
+        font-size: 55px;
         line-height: 1;
         margin-left: 186px;
         margin-bottom: 18px;
@@ -366,9 +584,9 @@ ul.content__advantages-lists {
 
     .content__description_of_values {
         padding: 40px 0 40px 20px;
-        max-width: 675px;
+        max-width: 555px;
         width: 100%;
-        margin-left: 428px;
+        margin-left: 310px;
         margin-bottom: 100px;
 
     }
@@ -408,7 +626,7 @@ ul.content__advantages-lists {
 
     ul.content__advantages-lists {
         max-width: 665px;
-        margin-left: 445px;
+        margin-left: 310px;
 
     }
 
@@ -425,16 +643,9 @@ ul.content__advantages-lists {
     }
 
     .wrap_content__quote_background:after {
-        content: "";
-        position: absolute;
-        background-image: url('../../img/about_us/bg_top_bottom_big.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         min-height: 1179px;
         width: 127%;
-        height: 100%;
-        z-index: -1;
-        right: -66%;
+        right: -45%;
         top: -529px;
     }
 
@@ -442,23 +653,18 @@ ul.content__advantages-lists {
         top: 627px;
         left: -176px;
         filter: blur(125px);
-        transform: rotate(-21deg);
-        width: 299px;
-        height: 216px;
     }
 
     .content__quote::after {
         top: 564px;
         left: 986px;
         filter: blur(125px);
-        transform: rotate(32deg);
-        width: 328px;
-        height: 328px;
+
     }
 
     .content__quote-txt {
         max-width: 950px;
-        font-size: 60px;
+        font-size: 55px;
         line-height: 1;
         margin-bottom: 40px;
     }
@@ -467,6 +673,46 @@ ul.content__advantages-lists {
         max-width: 445px;
         font-size: 20px;
         line-height: 1.5;
+        margin-left: 186px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+    }
+
+    .about__us__content:before {
+        max-width: 821px;
+    }
+
+    .about__us__content:after {
+        right: 57%;
+    }
+
+    .about__us__content-title {
+        font-size: 60px;
+    }
+
+    .content__description_of_values {
+        max-width: 675px;
+        margin-left: 428px;
+    }
+
+    ul.content__advantages-lists {
+        margin-left: 445px;
+    }
+
+    .wrap_content__quote_background:after {
+        right: -66%;
+    }
+
+    .content__quote-txt {
+        font-size: 60px;
+    }
+
+    .content__quote-subtitle {
         margin-left: 190px;
     }
 
