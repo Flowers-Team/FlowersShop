@@ -1,3 +1,4 @@
+@import "./mixin";
 /*
 
 <button class="button__[название кнопки] button__[название кнопки]-disabled">
@@ -23,7 +24,68 @@ button__[название кнопки]-progress
 
 Тег <span> добавлен для отображения анимации спиннера прогресса
 
+
+КЛАССЫ ДЛЯ ШРИФТОВ CORMORANT
+h1-cormorant-200-50
+h2-cormorant-100-40
+cormorant-60-20
+cormorant-40-20
+
+По шрифтам выделил только шрифт Cormorant, у него есть изменения по размеру и line-height.
+В стилях прописаны полностью все стили для данных шрифтов. Эти шрифты используются для заголовков.
+В несолких местах будет необходимость только переопределить цвет шрифта.
+Применён миксин для адаптивного изменения размера и line-height у данных шрифтов.
+Соответственно, при назначении данного стиля к заголовку - адаптив для него делать уже не надо.
+
+Остальные шрифты изменяются по разному, к ним общих стилей не применить. Основной шрифт Oswald 
+вообще практически не меняется с адаптивом. 
+
 */
+
+/* Шрифты */
+.cormorant-40-20 {
+    @include singleVar("font-size", 40, 20);
+    @include singleVar("line-height", 48, 24);
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.cormorant-60-20 {
+    @include singleVar("font-size", 60, 20);
+    @include singleVar("line-height", 64, 24);
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.h2-cormorant-100-40 {
+    @include singleVar("font-size", 100, 40);
+    @include singleVar("line-height", 121, 48);
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.h1-cormorant-200-50 {
+    @include singleVar("font-size", 200, 50);
+    @include singleVar("line-height", 242, 61);
+    @include singleVar("letter-spacing", 0.2, 0.1);
+    font-family: "Cormorant";
+    font-style: normal;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #ffffff;
+}
 
 /* Кнопки серии Смотреть каталог */
 .button__catalog {
