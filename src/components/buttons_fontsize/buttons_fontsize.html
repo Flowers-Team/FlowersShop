@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Buttons and fontsize component</title>
+        <link rel="stylesheet" href="../../styles/css/style.css" />
+        <link rel="stylesheet" href="./buttons_fontsize.css" />
+        <script defer src="../../js/header-footer.js"></script>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .wrapper-test {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                width: 100%;
+                margin: 20px 0;
+                gap: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header"></header>
+            <main class="content">
+                <div class="container">
+                    <h1 class="h1-cormorant-200-50">flower</h1>
+                    <h2 class="h2-cormorant-100-40">Каталог букетов</h2>
+                    <p class="cormorant-60-20">
+                        Природная гармония цвета, неповторимость бутонов и Ваши
+                        чувства в нежных лепестках не оставят никого
+                        равнодушным.
+                    </p>
+                    <p class="cormorant-40-20">
+                        поздравления для Ваших работников
+                    </p>
+                </div>
+                <div class="container">
+                    <div class="wrapper-test">
+                        <button class="button__catalog">
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                        <button
+                            class="button__catalog button__catalog-progress"
+                        >
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                        <button
+                            class="button__catalog button__catalog-disabled"
+                        >
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                    </div>
+                    <div class="wrapper-test">
+                        <button class="button__basket">
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                        <button class="button__basket button__basket-progress">
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                        <button class="button__basket button__basket-disabled">
+                            <span class="spinner"></span>
+                            Текст кнопки
+                        </button>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer"></footer>
+        </div>
+    </body>
+</html>
