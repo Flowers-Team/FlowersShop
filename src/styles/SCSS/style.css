@@ -1,3 +1,7 @@
+@import '../../fonts/Oswald/stylesheet.css';
+@import '../../fonts/Cormorant/stylesheet.css';
+@import '../../fonts/Relative/stylesheet.css';
+@import '../../fonts/Roboto Condensed/stylesheet.css';
 * {
   padding: 0;
   margin: 0;
@@ -82,16 +86,184 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.title_h1 {
+  font-family: "Cormorant";
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .title_h1 {
+    font-size: 200px;
+    line-height: 242px;
+  }
+}
+.title_h2 {
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .title_h2 {
+    font-size: 100px;
+    line-height: 121px;
+  }
+}
+.title_h3_green {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #43ffd2;
+  font-style: normal;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .title_h3_green {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+.title_h3_pink {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #d978ac;
+}
+@media (min-width: 768px) {
+  .title_h3_pink {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+.text {
+  font-family: "Oswald";
+  font-style: normal;
+}
+.text_subtitle {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .text_subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.text_subtitle_upper {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .text_subtitle_upper {
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+.text_subtitle_upper_pink {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #d978ac;
+}
+@media (min-width: 768px) {
+  .text_subtitle_upper_pink {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.btn {
+  font-family: "Oswald";
+  font-style: normal;
+}
+.btn_1_black {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.btn_2_white {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn_3_blue {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  color: #43ffd2;
+}
+.btn_h4_black {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #555555;
+}
+
+.footer {
+  font-family: "Oswald";
+  font-style: normal;
+  text-transform: uppercase;
+}
+.footer_p_upper {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.footer_2_upper {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  font-family: "Oswald";
+  background: #040A0A;
+  color: #FFFFFF;
 }
 
 .container {
-  max-width: 1245px;
+  max-width: 1130px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
   overflow: hidden;
 }
 

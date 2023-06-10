@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Cormorant';
+	src: url('cormorant_light.eot');
+	src: url('cormorant_light.eot?#iefix') format('embedded-opentype'),
+		url('cormorant_light.woff2') format('woff2'),
+		url('cormorant_light.woff') format('woff'),
+		url('cormorant_light.ttf') format('truetype'),
+		url('cormorant_light.svg#cormorant_light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Cormorant';
+	src: url('cormorant_regular.eot');
+	src: url('cormorant_regular.eot?#iefix') format('embedded-opentype'),
+		url('cormorant_regular.woff2') format('woff2'),
+		url('cormorant_regular.woff') format('woff'),
+		url('cormorant_regular.ttf') format('truetype'),
+		url('cormorant_regular.svg#cormorant_regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}

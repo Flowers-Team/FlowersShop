@@ -6,13 +6,94 @@
 
 :root {
   font-size: 65.2%;
+  scroll-behavior: smooth;
 }
 
-.content h1 {
-  font-size: 4rem;
-  color: red;
+body {
+  overflow-x: hidden;
+  background-color: #040a0a;
 }
-.content h1:hover {
-  cursor: pointer;
-  color: black;
+
+.content {
+  -webkit-margin-before: 10rem;
+          margin-block-start: 10rem;
+}
+.content .container-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  row-gap: 5rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  width: min(80rem, 80vw);
+}
+.content .container-cards .card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #ffffff;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+.content .container-cards .card > img {
+  aspect-ratio: 7/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content .container-cards .card > h5 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.content .container-cards .card small {
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+}
+.content .container-cards .card > button {
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: currentColor;
+  border: 0.5px solid #ffffff;
+  background-color: unset;
+  padding: 1.5rem 0;
+  letter-spacing: 0.1em;
+}
+.content .container-cards .card > button:is(:hover, :active) {
+  background-color: #43ffd2;
+  border-color: #43ffd2;
+  color: initial;
+  transition: background-color 0.3s ease-in-out;
+  transition: color 0.4s linear;
+  font-weight: bold;
+}
+.content .container-cards .card > button:focus {
+  border-color: #43ffd2;
+}
+.content .container-cards .card > button:disabled {
+  opacity: 0.5;
+}
+.content .container-cards .card .circle {
+  position: absolute;
+  top: -5%;
+  right: -5%;
+  margin-top: 1rem;
+  inline-size: 10ch;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .container-cards .card .circle > h6 {
+  color: initial;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.content .container-cards .card .circle-new {
+  background-color: #d978ac;
+}
+.content .container-cards .card .circle-sale {
+  background-color: #31985a;
 }/*# sourceMappingURL=card.css.map */
