@@ -1,17 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   font-size: 65.2%;
   scroll-behavior: smooth;
-}
-
-body {
-  overflow-x: hidden;
-  background-color: #040a0a;
 }
 
 .content {
@@ -43,22 +32,23 @@ body {
 .content .container-cards .card > h5 {
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
 }
 .content .container-cards .card small {
   font-size: 1.4rem;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0.05rem;
 }
 .content .container-cards .card > button {
-  -webkit-margin-before: 1rem;
-          margin-block-start: 1rem;
   font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
   color: currentColor;
   border: 0.5px solid #ffffff;
   background-color: unset;
   padding: 1.5rem 0;
-  letter-spacing: 0.1em;
 }
 .content .container-cards .card > button:is(:hover, :active) {
   background-color: #43ffd2;
@@ -75,6 +65,9 @@ body {
   opacity: 0.5;
 }
 .content .container-cards .card .circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: -5%;
   right: -5%;
@@ -82,14 +75,12 @@ body {
   inline-size: 10ch;
   aspect-ratio: 1;
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .content .container-cards .card .circle > h6 {
-  color: initial;
   font-size: 2rem;
   text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: initial;
 }
 .content .container-cards .card .circle-new {
   background-color: #d978ac;
