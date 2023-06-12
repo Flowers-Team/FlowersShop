@@ -1,53 +1,37 @@
 @import "_mixin.scss";
-// @import "../../fonts/comorant/Cormorant-Bold.ttf";
-// @import "../../fonts/comorant/Cormorant-BoldItalic.ttf";
-// @import "../../fonts/comorant/Cormorant-Italic.ttf";
-// @import "../../fonts/comorant/Cormorant-Light.ttf";
-// @import "../../fonts/comorant/Cormorant-LightItalic.ttf";
-// @import "../../fonts/comorant/Cormorant-Medium.ttf";
-// @import "../../fonts/comorant/Cormorant-MediumItalic.ttf";
-// @import "../../fonts/comorant";
-
-
-
-
-
-// @import "../../fonts/oswald/Oswald-Medium.ttf";
 
 .title {
+  // &_h1 {
+  //   font-family: "Cormorant";
+  //   font-weight: 300;
+  //   font-size: 50px;
+  //   line-height: 61px;
+  //   letter-spacing: 0.2em;
+  //   color: #ffffff;
+  //   font-style: normal;
+  //   text-transform: uppercase;
 
+  //   @media (min-width: 768px) {
+  //     font-size: 200px;
+  //     line-height: 242px;
+  //   }
+  // }
 
-  &_h1 {
-    font-family: "Cormorant";
-    font-weight: 300;
-    font-size: 50px;
-    line-height: 61px;
-    letter-spacing: 0.2em;
-    color: #ffffff;
-    font-style: normal;
-    text-transform: uppercase;
+  // &_h2 {
+  //   font-family: "Cormorant";
+  //   font-weight: 400;
+  //   font-size: 40px;
+  //   line-height: 48px;
+  //   letter-spacing: 0.02em;
+  //   color: #ffffff;
+  //   font-style: normal;
+  //   text-transform: uppercase;
 
-    @media (min-width: 768px) {
-      font-size: 200px;
-      line-height: 242px; 
-    }
-  }
-
-  &_h2 {
-    font-family: "Cormorant";
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 48px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    font-style: normal;
-    text-transform: uppercase;
-
-    @media (min-width: 768px) {
-      font-size: 100px;
-      line-height: 121px;
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     font-size: 100px;
+  //     line-height: 121px;
+  //   }
+  // }
 
   &_h3_green {
     font-family: "Oswald";
@@ -81,26 +65,27 @@
 }
 
 .text {
-  font-family: "Oswald";
-  font-style: normal;
+  // &_subtitle {
+  //   font-family: "Oswald";
+  //   font-style: normal;
+  //   font-weight: 300;
+  //   font-size: 14px;
+  //   line-height: 21px;
+  //   letter-spacing: 0.04em;
+  //   color: #ffffff;
 
-  &_subtitle {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-
-    @media (min-width: 768px) {
-      font-size: 20px;
-      line-height: 26px;
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     font-size: 20px;
+  //     line-height: 26px;
+  //   }
+  // }
 
   &_subtitle_upper {
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 14px;
+    line-height: 17px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
@@ -111,27 +96,28 @@
     }
   }
 
-  &_subtitle_upper_pink {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.1em;
-    text-decoration-line: underline;
-    text-transform: uppercase;
-    color: #d978ac;
+  // &_subtitle_upper_pink {
+  //   font-family: "Oswald";
+  //   font-style: normal;
+  //   font-weight: 700;
+  //   font-size: 12px;
+  //   line-height: 18px;
+  //   letter-spacing: 0.1em;
+  //   text-decoration-line: underline;
+  //   text-transform: uppercase;
+  //   color: #d978ac;
 
-    @media (min-width: 768px) {
-      font-size: 12px;
-      line-height: 18px;
-    }
-  }
+  //   @media (min-width: 768px) {
+  //     font-size: 12px;
+  //     line-height: 18px;
+  //   }
+  // }
 }
 
 .btn {
-  font-family: "Oswald";
-  font-style: normal;
-
   &_1_black {
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -141,6 +127,8 @@
   }
 
   &_2_white {
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 18px;
@@ -150,6 +138,8 @@
   }
 
   &_3_blue {
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 21px;
@@ -158,6 +148,8 @@
   }
 
   &_h4_black {
+    font-family: "Oswald";
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -167,11 +159,10 @@
 }
 
 .footer {
-  font-family: "Oswald";
-  font-style: normal;
-  text-transform: uppercase;
-
   &_p_upper {
+    font-family: "Oswald";
+    font-style: normal;
+    text-transform: uppercase;
     font-weight: 300;
     font-size: 12px;
     line-height: 18px;
@@ -180,6 +171,9 @@
   }
 
   &_2_upper {
+    font-family: "Oswald";
+    font-style: normal;
+    text-transform: uppercase;
     font-weight: 300;
     font-size: 10px;
     line-height: 15px;

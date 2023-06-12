@@ -1,12 +1,171 @@
-body{
-    background: #282828;
+body {
+  background: #282828;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .main_page {
-  display: flex;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
-.main_background {
-  width: 320px;
-  height: 105px;
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-image: url(../../img/main_page/topFlowers.png);
+  // background-repeat: no-repeat;
+  // position: relative;
+  // z-index: 100;
+  // width: 437px;
+  // background-position: 19px -149px;
+}
+
+// .main_content::before {
+//   background-image: url(../../img/main_page/topFlowers.png);
+//   background-repeat: no-repeat;
+//   width: 437px;
+//   background-position: 19px -149px;
+// }
+
+.main_signature {
+  width: 137.37px;
+  height: 80px;
+}
+
+.main_title {
+  font-family: "Cormorant";
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 200px;
+    line-height: 242px;
+  }
+}
+
+.main_subtitle {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.main_subtitle-st {
+  margin-bottom: 20px;
+  // display: flex;
+  // justify-content: center;
+}
+
+.main_subtitle-style {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.subtitle {
+  // margin-bottom: 20px;
+  // margin-top: 100px;
+  margin-left: 10px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 100px;
+    line-height: 121px;
+  }
+}
+
+.catalog_bgr {
+  width: 300px;
+  height: auto;
+  left: 10px;
+  top: 809px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.catalog_title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #43ffd2;
+  font-style: normal;
+  text-transform: uppercase;
+  // margin-bottom: 20px;
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+.text_subtitle_upper_pink {
+  margin-bottom: 30px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #d978ac;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.catalog_text_block {
+  gap: 6px;
+}
+
+ul.content__advantages-lists {
+  max-width: 262px;
+  margin-left: 15px;
+  list-style: disc;
+}
+
+li {
+  color: white;
 }
