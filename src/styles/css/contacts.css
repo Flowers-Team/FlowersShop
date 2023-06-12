@@ -1,0 +1,163 @@
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+
+}
+
+.contacts {
+    margin-bottom: 45px;
+}
+
+/* .container {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 10px;
+} */
+
+.contacts_bred_crumbs {
+    margin: 20px 0;
+    position: relative;
+
+}
+
+/* .contacts_bred_crumbs::before {
+    content: "";
+    position: absolute;
+    top: -133px;
+    left: -154px;
+    background: #C8A156;
+    filter: blur(100px);
+    transform: rotate(-71.86deg);
+    z-index: -1;
+    width: 274px;
+    height: 220px;
+} */
+
+.contacts_bred_crumbs-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 115px;
+}
+
+.contacts_bred_crumbs-item a {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.contacts_bred_crumbs-item:nth-child(1):after {
+    content: "/";
+    margin: 0 4px;
+    color: #FFFFFF;
+
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.contacts__content-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.contacts__content-title {
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #43FFD2;
+}
+
+.contacts__content-subtitle {
+    max-width: 96px;
+}
+
+.feedback__content p {
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+}
+
+.form input,
+.form textarea {
+    display: block;
+    border: 1px solid #555555;
+        width: 100%;
+    padding: 19px 0 20px 19px;
+    margin-bottom: 10px;
+       cursor: pointer;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.form input:hover::placeholder,
+.form textarea:hover::placeholder {
+    color: #000000;
+}
+
+.form input:focus,
+.form textarea:focus {
+    box-shadow: 0px 0px 0px 3px rgba(35, 82, 222, 0.5);
+    outline: none;
+}
+
+.form textarea {
+    padding: 19px 0 80px 20px;
+    resize: none;
+    margin-bottom: 20px;
+
+}
+
+.form button {
+    width: 255px;
+    margin-bottom: 10px;
+}
+
+.form p {
+    max-width: 235px;
+    font-weight: 400;
+    font-size: 10px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-transform: none;
+margin-bottom: 60px;
+}
+.form a {
+    text-decoration-line: underline;
+    color: #8B3131;
+}
+iframe{
+    max-width: 1108px;
+    width: 100%;
+    max-height: 300px;
+    
+}
+iframe.gm-style .place-card-medium {
+    display: none;
+}
+.map{
+    margin-bottom: 200px;
+}
+.map__title{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #43FFD2;
+    margin-bottom: 10px;
+}
