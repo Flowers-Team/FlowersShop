@@ -156,6 +156,25 @@ body {
   }
 }
 
+.h3_pink {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #d978ac;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+.text_subtitle_upper_pink_st {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
 .catalog_text_block {
   gap: 6px;
 }
@@ -168,4 +187,9 @@ ul.content__advantages-lists {
 
 li {
   color: white;
+}
+
+.order_point_1{
+  max-width: 147px;
+  min-height: 51px;
 }
