@@ -14,12 +14,13 @@
       href="../components/buttons_fontsize/buttons_fontsize.css"
     />
     <link rel="stylesheet" href="../components/card/card.css" />
+    <link rel="stylesheet" href="../styles/css/style.css">
   </head>
   <body>
     <div class="main_page">
       <section class="main_page">
         <div class="main_content">
-          <h1 class="main_title">Lover</h1>
+          <h1 class="main_title main_title_style">Lover</h1>
           <h1 class="main_title">Flower</h1>
 
           <h3 class="main_subtitle main_subtitle-st">
@@ -34,7 +35,6 @@
         <div class="catalog">
           <div>
             <h2 class="subtitle">каталог</h2>
-
             <div class="catalog_cards">
               <div class="catalog_bgr">
                 <h3 class="catalog_title">Цветы</h3>
@@ -76,9 +76,10 @@
               </div>
             </div>
 
-        <div class="popular_block">
+        <div>
           <h2 class="subtitle">Популярные</h2>
-          <h2 class="subtitle">букеты</h2>
+          <h2 class="subtitle subtitle_popular">букеты</h2>
+          <!-- <img class="popular_bgr" src="../img/main_page/popular_bgr.jpg" alt="background"> -->
 
           <h3 class="main_subtitle main_subtitle-style">
             Самые любимые композиции наших клиентов
@@ -218,9 +219,80 @@
           </div>
         </div>
 
+        <footer class="footer">
+          <div class="footer__container container">
+            <div class="footer__column footer__column_01">
+              <a href="index.html" class="footer__logo"><img src="img/icons/main-logo.svg" alt="main-logo"></a>
+            </div>
+            <div class="footer__column footer__column_02">
+              <a href="" class="footer__title">Каталог</a>
+              <ul class="footer__links">
+                <li><a href="" class="footer__link">Популярное</a></li>
+                <li><a href="" class="footer__link">Сухоцветы</a></li>
+                <li><a href="" class="footer__link">Букеты роз</a></li>
+                <li><a href="" class="footer__link">Композиции из цветов</a></li>
+                <li><a href="" class="footer__link">Индивидуальный букет</a></li>
+                <li><a href="" class="footer__link">Букет на праздник</a></li>
+                <li><a href="" class="footer__link">Упаковка подарков</a></li>
+                <li><a href="" class="footer__link">Шары</a></li>
+                <li><a href="" class="footer__link">Открытки</a></li>
+                <li><a href="" class="footer__link">Конверты</a></li>
+              </ul>
+            </div>
+            <div class="footer__column footer__column_03">
+              <a href="" class="footer__title">Букет</a>
+              <ul class="footer__links">
+                <li><a href="" class="footer__link">Для девушки</a></li>
+                <li><a href="" class="footer__link">Для мужчины</a></li>
+                <li><a href="" class="footer__link">Для жены</a></li>
+                <li><a href="" class="footer__link">Для мамы</a></li>
+                <li><a href="" class="footer__link">Для коллеги</a></li>
+                <li><a href="" class="footer__link">Для начальника</a></li>
+                <li><a href="" class="footer__link">Для дочки</a></li>
+                <li><a href="" class="footer__link">Для детей</a></li>
+                <li><a href="" class="footer__link">Для женщины</a></li>
+              </ul>
+            </div>
+            <nav class="footer__column footer__column_04">
+              <ul class="footer__nav">
+                <li><a href="" class="footer__title">Доставка и оплата </a></li>
+                <li><a href="" class="footer__title">О нас</a></li>
+                <li><a href="" class="footer__title">FAQ</a></li>
+                <li><a href="" class="footer__title">Контакты</a></li>
+                <li><a href="" class="footer__title">для корпоративных клиентов</a></li>
+              </ul>
+            </nav>
+            <div class="footer__column footer__column_05">
+              <dl class="footer__description">
+                <dt><a href="mailto:zakaz@loverflower.by" class="footer__description-title">zakaz@loverflower.by</a></dt>
+                <dd class="footer__description-description">Доставка 24/7 по договоренности с оператором</dd>
+                <dt><a href="https://yandex.ru/maps/157/minsk/house/Zk4YcwdoSEICQFtpfXVzdH5lbQ==/?from=tabbar&ll=27.505865%2C53.920824&source=serp_navig&z=13.99" target="blank" class="footer__description-title">ул. Тимирязева 67</a></dt>
+                <dd class="footer__description-description">10:00 до 21:00 без выходных</dd>
+                <dt><a href="tel:+375291136969" class="footer__description-title">+375 (29) 113-69-69</a></dt>
+                <dd class="footer__description-description">прием звонков круглосуточно</dd>
+                <dt class="footer__description-soc">soc</dt>
+                <dd class="footer__description-links">
+                  <ul class="footer__description-list">
+                    <li><a href="https://www.instagram.com/" target="blank" class="footer__description-link icon icon_1"></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="blank" class="footer__description-link icon icon_2"></a></li>
+                    <li><a href="https://www.viber.com/" target="blank" class="footer__description-link icon icon_3"></a></li>
+                  </ul>
+                </dd>
+              </dl>
+              <dl class="footer__address">
+                <dt class="footer__address-title">реквизиты</dt>
+                <dd class="footer__address-prop">ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого</dd>
+              </dl>
+            </div>
+          </div>
+        </footer>
+
+
+
       </section>
     </div>
 
     <script src="../components//card/card.js"></script>
+    <script src="../js/header-footer.js"></script>
   </body>
 </html>
