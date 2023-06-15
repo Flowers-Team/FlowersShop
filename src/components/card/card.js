@@ -59,6 +59,5 @@ generateCards(array_links);
 const cards = document.querySelectorAll(".card");
 
 generateCircleNew(cards[0]);
-generateCircleNew(cards[6]);
 generateCircleSale(cards[1]);
-generateCircleSale(cards[9]);
+// generateCircleSale(cards[9]);
