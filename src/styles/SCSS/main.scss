@@ -1,12 +1,277 @@
-body{
-    background: #282828;
+body {
+  background: #282828;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 .main_page {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.main_page::before {
+  background-image: url(../../img/main_page/main_bgr_hands.jpg);
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.main_page:before,
+.main_page:after {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 1244px;
+  max-height: 1440px;
+  width: 100%;
+  height: 100%;
+  // z-index: -1;
+}
+
+.main_page:after {
+  background-image: url("../../img/main_page/mainPage_bgr_flw.svg");
+  right: 0px;
+  top: 0px;
+  z-index: 44;
+}
+
+.main_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_signature {
+  width: 137.37px;
+  height: 80px;
+}
+
+.main_title {
+  font-family: "Cormorant";
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 200px;
+    line-height: 242px;
+  }
+}
+
+.main_title_style {
+  margin-top: 8px;
+}
+
+.main_subtitle {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.main_subtitle-st {
+  margin-bottom: 20px;
+  margin-top: 409px;
+  width: 212px;
+  height: 42px;
+}
+
+.main_subtitle-style {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 12px;
+}
+
+.subtitle {
+  margin-left: 10px;
+  font-family: "Cormorant";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  font-style: normal;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 100px;
+    line-height: 121px;
+  }
+}
+
+.subtitle_popular {
+  margin-left: 61px;
+  @media (min-width: 768px) {
+    margin-left: 545px;
+  }
+}
+
+.text_subtitle_upper_pink {
+}
+
+.catalog::before {
+  content: "";
+  position: absolute;
+  width: 667.05px;
+  height: 127.85px;
+  left: -113.69px;
+  top: 828px;
+  background: #43ffd2;
+  filter: blur(125px);
+  transform: rotate(32.83deg);
+  z-index: -1;
+}
+
+.catalog_cards::before {
+  content: "";
+  position: absolute;
+  width: 707.54px;
+  height: 236.87px;
+  left: -114px;
+  top: 1100px;
+
+  background: #7d2253;
+  filter: blur(125px);
+  transform: rotate(-37.57deg);
+  z-index: -11;
+}
+
+.catalog_bgr {
+  width: 300px;
+  height: auto;
+  left: 10px;
+  top: 809px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.catalog_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 100px;
+  margin-top: 20px;
+}
+
+.catalog_title {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #43ffd2;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-top: 20px;
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+.text_subtitle_upper_pink {
+  margin-bottom: 30px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #d978ac;
+
+  @media (min-width: 768px) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.h3_pink {
+  font-family: "Oswald";
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #d978ac;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    line-height: 44px;
+  }
+}
+
+.text_subtitle_upper_pink_st {
+  margin-top: 40px;
+  margin-left: 10px;
+  margin-bottom: 100px;
   display: flex;
 }
 
-.main_background {
-  width: 320px;
-  height: 105px;
+.catalog_text_block {
+  gap: 6px;
 }
+
+ul.content__advantages-lists {
+  max-width: 262px;
+  margin-left: 15px;
+  list-style: disc;
+}
+
+li {
+  color: white;
+}
+
+.order::before {
+  content: "";
+  position: absolute;
+  width: 389.9px;
+  height: 165.58px;
+  left: 71px;
+  top: 3613.73px;
+  background: #7d2253;
+  filter: blur(125px);
+  transform: rotate(-37.57deg);
+  z-index: 1;
+}
+
+.order_point_1 {
+  max-width: 147px;
+  min-height: 51px;
+}
+
+// .popular_bgr {
+//   display: none;
+//   @media (min-width: 768px) {
+//     display: block;
+//     position: absolute;
+//     width: 974px;
+//     height: 748px;
+//     left: 466px;
+//     top: 2273px;
+//   }
+// }
