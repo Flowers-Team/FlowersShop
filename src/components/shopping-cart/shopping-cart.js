@@ -1,5 +1,7 @@
-// import "./generate-card.js";
-const arrayLink = ["./images/buket.png", "./images/rose.png"];
+const arrayLink = [
+  "/src/img/shopping-cart/buket.png",
+  "/src/img/shopping-cart/rose.png",
+];
 const arrayAlt = ["buket", "rose"];
 const nameCard = ["рубиновые искры", "рубиновые искры"];
 const priceCard = ["167.00 ₽", "167.00 ₽"];
@@ -67,13 +69,16 @@ const number = document.querySelectorAll(".number");
 const removeCardNodeList = document.querySelectorAll(".remove-card");
 const pickedCard = document.querySelectorAll(".picked-card");
 
-function openCart() {
-  shopping_cart.style.display = "flex";
-}
+const basketIcon = document.querySelector(".header__basket");
+const closeCart = document.querySelector(".close-cart");
 
-function closeCart() {
+basketIcon.addEventListener("click", () => {
+  shopping_cart.style.display = "flex";
+});
+
+closeCart.addEventListener("click", () => {
   shopping_cart.style.display = "none";
-}
+});
 
 plusNodeList.forEach((plus, index) => {
   plus.addEventListener("click", (e) => {

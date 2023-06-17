@@ -65,7 +65,7 @@ const generateHeader = () => {
               </dl>
             </div>
           </div>
-          <button type="button" class="header__basket" onclick="openCart()"><span class="header__icon icon_4"><output class="header__basket-count">0</output></span></button>
+          <button type="button" class="header__basket"><span class="header__icon icon_4"><output class="header__basket-count">0</output></span></button>
         </div>
     `
   );
