@@ -6,13 +6,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog Page</title>
     <link rel="stylesheet" href="/src/styles/css/style.css" />
+    <link rel="stylesheet" href="/src/styles/SCSS/catalog.css" />
+    <link
+      rel="stylesheet"
+      href="/src/components/shopping-cart/shopping-cart.css"
+    />
     <script type="module" defer src="/src/js/header-footer.js"></script>
+    <script
+      type="module"
+      src="/src/components/shopping-cart/shopping-cart.js"
+    ></script>
+    <script type="module" src="/src/js/catalog.js"></script>
   </head>
   <body>
     <div class="wrapper">
+      <!-- Shopping Card -->
+      <div class="shopping-cart">
+        <div class="blur"></div>
+        <section class="title">
+          <h2>Ваша корзина</h2>
+          <div class="close-cart"></div>
+          <hr />
+        </section>
+        <section class="container-cards"></section>
+        <section class="end">
+          <h6>Добавьте к заказу <span>Шары:</span></h6>
+          <div class="container">
+            <div class="col col-1">
+              <img src="./images/balloon-star.png" alt="balloon-star" />
+              <div class="container">
+                <p>ШАР “ЗВЕЗДА”</p>
+                <small>11.00 ₽</small>
+                <a href="#">Добавить</a>
+              </div>
+            </div>
+            <div class="col col-2">
+              <img src="./images/balloon-heart.png" alt="balloon-heart" />
+              <div class="container">
+                <p>ШАР “СЕРДЦЕ”</p>
+                <small>11.00 ₽</small>
+                <a href="#">Добавить</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p>
+            Предварительный итог: 315.00 руб.<br />
+            Чтобы узнать стоимость доставки, перейдите<br />
+            к оформлению заказа.
+          </p>
+          <button>Оформить заказ</button>
+        </section>
+      </div>
+      <!-- Shopping Card -->
       <header class="header"></header>
       <main class="content">
-        <h1>Start Dev</h1>
+        <!-- Section 1 -->
+        <section class="section section-1">
+          <img src="/src/img/catalog/flower2.png" alt="flower1" />
+          <h6 onclick="openCart()">Главная / Каталог</h6>
+          <div class="block block-1">
+            <h2>каталог</h2>
+            <h2>букетов</h2>
+            <p>
+              В нашем магазине самый большой выбор букетов для любых событий:
+            </p>
+            <div class="row row-1"></div>
+            <div class="row row-2"></div>
+            <div class="row row-3"></div>
+          </div>
+        </section>
+        <!-- Section 2 -->
+        <section class="section section-2"></section>
       </main>
       <footer class="footer"></footer>
     </div>

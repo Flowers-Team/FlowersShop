@@ -1,0 +1,42 @@
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.content .section-1 {
+  position: relative;
+  z-index: 2;
+}
+.content .section-1 > img {
+  position: absolute;
+  top: -100%;
+  left: -12%;
+  z-index: -1;
+  width: 50%;
+}
+.content .section-1 .block-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem 2rem;
+}
+.content .section-1 .block-1 > h2 {
+  font-family: "Cormorant";
+  font-style: normal;
+  font-size: 10rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.content .section-1 .block-1 > p {
+  font-size: 1.4rem;
+  text-transform: none;
+  letter-spacing: 0.04em;
+}/*# sourceMappingURL=catalog.css.map */
