@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="stylesheet" href="../components/buttons_fontsize/buttons_fontsize.css">
+    <link rel="stylesheet" href="../styles/css/contacts.css">
+
+    <!-- <script defer src="./js/header-footer.js"></script> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="content__contacts">
+            <section class="contacts">
+                <div class="container">
+                    <div class="contacts_bred_crumbs">
+                        <ul class="contacts_bred_crumbs-list">
+                            <li class="contacts_bred_crumbs-item">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="contacts_bred_crumbs-item">
+                                <a href="#"> Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <h1 class="title h2-cormorant-100-40">Контакты</h1>
+                    <div class="contacts__content">
+                        <ul class="contacts__content-list">
+                            <li class="contacts__content-item">
+                                <p class="contacts__content-title">время работы</p>
+                                <p class="contacts__content-subtitle">с 10:00 до 21:00 без выходных</p>
+                            </li>
+                            <li class="contacts__content-item">
+                                <p class="contacts__content-title">Адрес</p>
+                                <adress class="adress">
+                                    г. Минск, ул. Тимирязева 67, комн. 112
+                                </adress>
+                            </li>
+                            <li class="contacts__content-item">
+                                <p class="contacts__content-title">Телефон</p>
+                                <a class="phone" href="tel:+375291136969">+375 (29) 113-69-69</a>
+                            </li>
+                            <li class="contacts__content-item">
+                                <p class="contacts__content-title">E-mai</p>
+                                <a class="email" href="malito:zakaz@loverflower.by">zakaz@loverflower.by</a>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__content">
+                        <h1 class="title h2-cormorant-100-40">напишите <span>нам</span></h1>
+                        <div class="feedback__content-wrap">
+                            <p>Отправьте ваш вопрос, заказ, предложение или жалобу через форму обратной связи, и наш
+                                специалист свяжется с вами в течение 15 минут.</p>
+                            <div class="feedback__form">
+                                <form class="form" action="#">
+                                    <label for="name" style="position: absolute; left: -9999px;">Ваше имя</label>
+                                    <input type="text" id="name" placeholder="Ваше имя" required>
+                                    <label for="phone" style="position: absolute; left: -9999px;">Номер телефона</label>
+                                    <input type="tel" id="phone" placeholder="+7 (977) 777-77-77" required>
+                                    <label for="message" style="position: absolute; left: -9999px;">Ваш
+                                        комментарий</label>
+                                    <textarea id="message" placeholder="Ваш комментарий" required></textarea>
+
+                                    <button class="button__catalog" type="submit">отправить</button>
+                                    <p class="feedback__content_title">Нажимая на кнопку «Отправить», я даю свое
+                                        согласие на обработку персональных данных, в соответствии с <a href="">Политикой
+                                            конфиденциальности</a></p>
+                                </form>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
+            <div class="map">
+                <div class="container">
+                    <p class="map__title">Мы на карте</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9256.492429849608!2d27.505117471404045!3d53.92399549069972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc56c6b46c34f%3A0xb4592a0d073badb1!2z0YPQuy4g0KLQuNC80LjRgNGP0LfQtdCy0LAgNjcsINCc0LjQvdGB0LogMjIwMDM1LCDQkdC10LvQsNGA0YPRgdGM!5e1!3m2!1sru!2skz!4v1686587214671!5m2!1sru!2skz"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

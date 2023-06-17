@@ -14,12 +14,10 @@ let $ = document.querySelector.bind(document),
 
 window.addEventListener("resize", chooseOptionResize);
 chooseOptionResize();
-
 function chooseOptionResize() {
   let iWidth = window.innerWidth;
   menuElementsReplace(iWidth);
 }
-
 function menuElementsReplace(iWidth) {
   if (iWidth < 768) descr.after(prop);
   if (iWidth >= 768) logoF.after(prop);
@@ -48,7 +46,6 @@ function openMenu() {
   $(".header__menu").classList.add("active");
   $("body").classList.add("lock");
 }
-
 function closeMenu() {
   $(".header__menu").classList.remove("active");
   $("body").classList.remove("lock");

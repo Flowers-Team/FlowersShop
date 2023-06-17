@@ -86,38 +86,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.title_h1 {
-  font-family: "Cormorant";
-  font-weight: 300;
-  font-size: 50px;
-  line-height: 61px;
-  letter-spacing: 0.2em;
-  color: #ffffff;
-  font-style: normal;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .title_h1 {
-    font-size: 200px;
-    line-height: 242px;
-  }
-}
-.title_h2 {
-  font-family: "Cormorant";
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  font-style: normal;
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  .title_h2 {
-    font-size: 100px;
-    line-height: 121px;
-  }
-}
 .title_h3_green {
   font-family: "Oswald";
   font-weight: 700;
@@ -149,27 +117,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.text {
+.text_subtitle_upper {
   font-family: "Oswald";
   font-style: normal;
-}
-.text_subtitle {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-@media (min-width: 768px) {
-  .text_subtitle {
-    font-size: 20px;
-    line-height: 26px;
-  }
-}
-.text_subtitle_upper {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 14px;
+  line-height: 17px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ffffff;
@@ -180,27 +133,10 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 27px;
   }
 }
-.text_subtitle_upper_pink {
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.1em;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-  color: #d978ac;
-}
-@media (min-width: 768px) {
-  .text_subtitle_upper_pink {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
 
-.btn {
+.btn_1_black {
   font-family: "Oswald";
   font-style: normal;
-}
-.btn_1_black {
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -209,6 +145,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000000;
 }
 .btn_2_white {
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
@@ -217,6 +155,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 .btn_3_blue {
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
@@ -224,6 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #43ffd2;
 }
 .btn_h4_black {
+  font-family: "Oswald";
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -231,12 +173,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #555555;
 }
 
-.footer {
+.footer_p_upper {
   font-family: "Oswald";
   font-style: normal;
   text-transform: uppercase;
-}
-.footer_p_upper {
   font-weight: 300;
   font-size: 12px;
   line-height: 18px;
@@ -244,6 +184,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 .footer_2_upper {
+  font-family: "Oswald";
+  font-style: normal;
+  text-transform: uppercase;
   font-weight: 300;
   font-size: 10px;
   line-height: 15px;
