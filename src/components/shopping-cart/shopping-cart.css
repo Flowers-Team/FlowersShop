@@ -173,9 +173,9 @@
 .shopping-cart .end > .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  width: min(100vw, 45rem);
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
+  width: min(100vw, 45rem);
 }
 .shopping-cart .end > .container .col {
   display: flex;
