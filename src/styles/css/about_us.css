@@ -145,7 +145,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     max-width: 356px;
-    width: 110%;
+    width: 110%; 
     height: 100%;
     z-index: -1;
 }
