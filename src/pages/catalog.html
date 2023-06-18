@@ -7,7 +7,7 @@
         <title>Hello</title>
         <style>
             img {
-                width: 300px;
+                max-width: 450px;
             }
         </style>
     </head>
@@ -27,10 +27,18 @@
                         main.insertAdjacentHTML(
                             "beforebegin",
                             `<h2>${el.id.toUpperCase()}</h2>
+                                <p>${el.name.toUpperCase()}</p>
+                                <p>${el.price}</p>
+                                <p>${el.description}</p>
+                                <p>${el.consist}</p>
+                                <p>${el.category}</p>
+                                <p>${el.marks}</p>
                                 <p>${el.photo}</p>
                                 <img src="${img[0]}" alt="photo"/>
                                 <img src="${img[1]}" alt="photo-1"/>
-                                <img src="${img[2]}" alt="photo-2"/>`
+                                <img src="${img[2]}" alt="photo-2"/>
+                                <img src="${el.photo_mini}" alt="photo-2"/>
+                                <p>------------------------------------------</p>`
                         );
                     });
                 } else console.log(`Ошибка получения данных: ${res.status}`);
