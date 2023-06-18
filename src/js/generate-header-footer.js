@@ -1,0 +1,148 @@
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
+
+const generateHeader = () => {
+  header.insertAdjacentHTML(
+    "afterbegin",
+    `
+      <div class="header__container container">
+          <div class="header__burger-wrapper"><button type="button" class="header__burger"><span></span></button></div>
+          <h2 class="header__title"><span class="header__title-top">lover</span><span class="header__title-bottom">flower</span></h2>
+          <div class="header__menu">
+            <div class="header__menu-wrapper">
+              <a href="index.html" class="header__logo"><img src="/src/img/icons/main-logo.svg" alt="main-logo"></a>
+              <button type="button" class="header__close btn_close"><span></span></button>
+              <form class="header__form"><button type="button" class="header__search-btn icon icon_5"></button>
+                <label class="header__search" for="search"><input id="search" type="search" placeholder="поиск" minlength="1" maxlength="50">
+                </label>
+              </form>
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li><a href="index.html" class="header__link">Главная</a></li>
+                  <li>
+                    <a href="#" class="header__link header__link-catalog">Каталог</a>
+                    <div class="header__list-wrapper">
+                      <ul class="header__list">
+                        <li><a href="" class="header__list-link">Популярное</a></li>
+                        <li><a href="" class="header__list-link">Сборны букеты</a></li>
+                        <li><a href="" class="header__list-link">монобукеты</a></li>
+                        <li><a href="" class="header__list-link">розы</a></li>
+                        <li><a href="" class="header__list-link">свадебные</a></li>
+                        <li><a href="" class="header__list-link">Композиции из цветов к коробке</a></li>
+                        <li><a href="" class="header__list-link">интерьерные композиции</a></li>
+                        <li><a href="" class="header__list-link">индивидуальный букет</a></li>
+                        <li><a href="" class="header__list-link">сухоцветы</a></li>
+                        <li><a href="" class="header__list-link">горшечные</a></li>
+                        <li><a href="" class="header__list-link">дополнительно</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="" class="header__link">Доставка и оплата </a></li>
+                  <li><a href="" class="header__link">О нас</a></li>
+                  <li><a href="" class="header__link">Контакты</a></li>
+                  <li><a href="" class="header__link">FAQ</a></li>
+                  <li><a href="" class="header__link">для корпоративных клиентов</a></li>
+                </ul>
+              </nav>
+              <dl class="header__description">
+                <dt><a href="mailto:zakaz@loverflower.by" class="footer__description-title">zakaz@loverflower.by</a></dt>
+                <dd class="footer__description-description">Доставка 24/7 по договоренности с оператором</dd>
+                <dt><a href="https://yandex.ru/maps/157/minsk/house/Zk4YcwdoSEICQFtpfXVzdH5lbQ==/?from=tabbar&ll=27.505865%2C53.920824&source=serp_navig&z=13.99" target="blank" class="footer__description-title">ул. Тимирязева 67</a></dt>
+                <dd class="footer__description-description">10:00 до 21:00 без выходных</dd>
+                <dt class="header__politic">
+                  <a href="">Политика конфиденциальности</a>
+                  <a href="">Обработка персональных данных</a>
+                </dt>
+                <dd class="header__description-description"><a href="tel:+375291136969" class="header__tel footer__description-title">+375 (29) 113-69-69</a></dd>
+                <dt class="footer__description-soc">soc</dt>
+                <dd class="header__soc">
+                  <ul class="header__soc-links">
+                    <li><a href="https://www.instagram.com/" target="blank" class="header__soc-link icon icon_1"></a></li>
+                    <li><a href="https://www.whatsapp.com/" target="blank" class="header__soc-link icon icon_2"></a></li>
+                    <li><a href="https://www.viber.com/" target="blank" class="header__soc-link icon icon_3"></a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <button type="button" class="header__basket"><span class="header__icon icon_4"><output class="header__basket-count">0</output></span></button>
+        </div>
+    `
+  );
+};
+
+const generateFooter = () => {
+  footer.insertAdjacentHTML(
+    "afterbegin",
+    `
+      <div class="footer__container container">
+      <div class="footer__column footer__column_01">
+        <a href="index.html" class="footer__logo"><img src="/src/img/icons/main-logo.svg" alt="main-logo"></a>
+      </div>
+      <div class="footer__column footer__column_02">
+        <a href="" class="footer__title">Каталог</a>
+        <ul class="footer__links">
+          <li><a href="" class="footer__link">Популярное</a></li>
+          <li><a href="" class="footer__link">Сухоцветы</a></li>
+          <li><a href="" class="footer__link">Букеты роз</a></li>
+          <li><a href="" class="footer__link">Композиции из цветов</a></li>
+          <li><a href="" class="footer__link">Индивидуальный букет</a></li>
+          <li><a href="" class="footer__link">Букет на праздник</a></li>
+          <li><a href="" class="footer__link">Упаковка подарков</a></li>
+          <li><a href="" class="footer__link">Шары</a></li>
+          <li><a href="" class="footer__link">Открытки</a></li>
+          <li><a href="" class="footer__link">Конверты</a></li>
+        </ul>
+      </div>
+      <div class="footer__column footer__column_03">
+        <a href="" class="footer__title">Букет</a>
+        <ul class="footer__links">
+          <li><a href="" class="footer__link">Для девушки</a></li>
+          <li><a href="" class="footer__link">Для мужчины</a></li>
+          <li><a href="" class="footer__link">Для жены</a></li>
+          <li><a href="" class="footer__link">Для мамы</a></li>
+          <li><a href="" class="footer__link">Для коллеги</a></li>
+          <li><a href="" class="footer__link">Для начальника</a></li>
+          <li><a href="" class="footer__link">Для дочки</a></li>
+          <li><a href="" class="footer__link">Для детей</a></li>
+          <li><a href="" class="footer__link">Для женщины</a></li>
+        </ul>
+      </div>
+      <nav class="footer__column footer__column_04">
+        <ul class="footer__nav">
+          <li><a href="" class="footer__title">Доставка и оплата </a></li>
+          <li><a href="" class="footer__title">О нас</a></li>
+          <li><a href="" class="footer__title">FAQ</a></li>
+          <li><a href="" class="footer__title">Контакты</a></li>
+          <li><a href="" class="footer__title">для корпоративных клиентов</a></li>
+        </ul>
+      </nav>
+      <div class="footer__column footer__column_05">
+        <dl class="footer__description">
+          <dt><a href="mailto:zakaz@loverflower.by" class="footer__description-title">zakaz@loverflower.by</a></dt>
+          <dd class="footer__description-description">Доставка 24/7 по договоренности с оператором</dd>
+          <dt><a href="https://yandex.ru/maps/157/minsk/house/Zk4YcwdoSEICQFtpfXVzdH5lbQ==/?from=tabbar&ll=27.505865%2C53.920824&source=serp_navig&z=13.99" target="blank" class="footer__description-title">ул. Тимирязева 67</a></dt>
+          <dd class="footer__description-description">10:00 до 21:00 без выходных</dd>
+          <dt><a href="tel:+375291136969" class="footer__description-title">+375 (29) 113-69-69</a></dt>
+          <dd class="footer__description-description">прием звонков круглосуточно</dd>
+          <dt class="footer__description-soc">soc</dt>
+          <dd class="footer__description-links">
+            <ul class="footer__description-list">
+              <li><a href="https://www.instagram.com/" target="blank" class="footer__description-link icon icon_1"></a></li>
+              <li><a href="https://www.whatsapp.com/" target="blank" class="footer__description-link icon icon_2"></a></li>
+              <li><a href="https://www.viber.com/" target="blank" class="footer__description-link icon icon_3"></a></li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="footer__address">
+          <dt class="footer__address-title">реквизиты</dt>
+          <dd class="footer__address-prop">ООО «Ловефлове» 220035, Республика Беларусь, г. Минск, ул. Тимирязева д. 67, комн. 112 (пом.11) УНП 193263781, р/с BY55MTBK30120001093300096372 ЗАО «МТБанк», БИК MTBKBY22 220007, г. Минск, улица Толстого</dd>
+        </dl>
+      </div>
+    </div>
+  `
+  );
+};
+
+generateHeader();
+generateFooter();
