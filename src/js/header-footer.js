@@ -1,3 +1,6 @@
+<<<<<<<<< Temporary merge branch 1
+import "./generate-header-footer.js";
+
 let $ = document.querySelector.bind(document),
     $$ = document.querySelectorAll.bind(document),
     prop = $(".footer__address"),
