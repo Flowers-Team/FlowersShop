@@ -12,10 +12,10 @@
 .content .container-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  justify-items: center;
   row-gap: 5rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
-  width: min(80rem, 80vw);
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .content .container-cards .card {
   display: flex;

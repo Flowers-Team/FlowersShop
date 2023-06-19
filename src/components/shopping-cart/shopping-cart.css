@@ -4,22 +4,22 @@
 }
 
 /* width */
-.container-cards::-webkit-scrollbar {
+.container-cards-shopping-cart::-webkit-scrollbar {
   width: 0.6rem;
 }
 
 /* Track */
-.container-cards::-webkit-scrollbar-track {
+.container-cards-shopping-cart::-webkit-scrollbar-track {
   background: none;
 }
 
 /* Handle */
-.container-cards::-webkit-scrollbar-thumb {
+.container-cards-shopping-cart::-webkit-scrollbar-thumb {
   background: #555555;
 }
 
 /* Handle on hover */
-.container-cards::-webkit-scrollbar-thumb:hover {
+.container-cards-shopping-cart::-webkit-scrollbar-thumb:hover {
   background: #7d2253;
 }
 
@@ -94,7 +94,7 @@
   grid-column: 1/3;
   grid-row: 2/3;
 }
-.shopping-cart > .container-cards {
+.shopping-cart > .container-cards-shopping-cart {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
@@ -103,42 +103,42 @@
   overflow-y: scroll;
   position: relative;
 }
-.shopping-cart > .container-cards .picked-card {
+.shopping-cart > .container-cards-shopping-cart .picked-card {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-.shopping-cart > .container-cards .picked-card > .container {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   width: 100%;
 }
-.shopping-cart > .container-cards .picked-card > .container .col {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   justify-content: space-between;
 }
-.shopping-cart > .container-cards .picked-card > .container .col :is(h5, h6) {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col :is(h5, h6) {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
-.shopping-cart > .container-cards .picked-card > .container .col h6 {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col h6 {
   color: #43ffd2;
 }
-.shopping-cart > .container-cards .picked-card > .container .col > button {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col > button {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   text-decoration: underline;
 }
-.shopping-cart > .container-cards .picked-card > .container .col > button:is(:hover, :active) {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col > button:is(:hover, :active) {
   transition: color 0.4s linear;
   color: #43ffd2;
 }
-.shopping-cart > .container-cards .picked-card > .container .col .counter {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col .counter {
   display: flex;
   font-size: 1.8rem;
   text-transform: none;
@@ -151,10 +151,10 @@
   color: #555555;
   cursor: pointer;
 }
-.shopping-cart > .container-cards .picked-card > .container .col .counter .block-click {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col .counter .block-click {
   pointer-events: none;
 }
-.shopping-cart > .container-cards .picked-card > .container .col-2 {
+.shopping-cart > .container-cards-shopping-cart .picked-card > .container .col-2 {
   flex-grow: 1;
 }
 .shopping-cart .end {
@@ -173,9 +173,9 @@
 .shopping-cart .end > .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  width: min(100vw, 45rem);
   -webkit-margin-after: 1rem;
           margin-block-end: 1rem;
+  width: min(100vw, 45rem);
 }
 .shopping-cart .end > .container .col {
   display: flex;

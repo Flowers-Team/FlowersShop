@@ -1,16 +1,16 @@
 const array_links = [
-  "./images/flower-1.png",
-  "./images/flower-2.png",
-  "./images/flower-3.png",
-  "./images/flower-4.png",
-  "./images/flower-5.png",
-  "./images/flower-6.png",
-  "./images/flower-7.png",
-  "./images/flower-8.png",
-  "./images/flower-9.png",
-  "./images/flower-10.png",
-  "./images/flower-11.png",
-  "./images/flower-12.png",
+  "/src/img/card/flower-1.png",
+  "/src/img/card/flower-2.png",
+  "/src/img/card/flower-3.png",
+  "/src/img/card/flower-4.png",
+  "/src/img/card/flower-5.png",
+  "/src/img/card/flower-6.png",
+  "/src/img/card/flower-7.png",
+  "/src/img/card/flower-8.png",
+  "/src/img/card/flower-9.png",
+  "/src/img/card/flower-10.png",
+  "/src/img/card/flower-11.png",
+  "/src/img/card/flower-12.png",
 ];
 
 const generateCards = (array) => {
@@ -58,7 +58,8 @@ generateCards(array_links);
 
 const cards = document.querySelectorAll(".card");
 
-generateCircleNew(cards[0]);
-generateCircleNew(cards[6]);
-generateCircleSale(cards[1]);
-generateCircleSale(cards[9]);
+generateCircleNew(cards[1]);
+generateCircleSale(cards[3]);
+generateCircleSale(cards[5]);
+generateCircleSale(cards[8]);
+generateCircleSale(cards[10]);

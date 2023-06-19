@@ -1,4 +1,3 @@
-console.log(1);
 const arrayLink = [
   "/src/img/shopping-cart/buket.png",
   "/src/img/shopping-cart/rose.png",
@@ -6,7 +5,7 @@ const arrayLink = [
 const arrayAlt = ["buket", "rose"];
 const nameCard = ["рубиновые искры", "рубиновые искры"];
 const priceCard = ["167.00 ₽", "167.00 ₽"];
-const containerCards = document.querySelector(".container-cards");
+const containerCards = document.querySelector(".container-cards-shopping-cart");
 
 const decodeHtmlCharCodes = (str) =>
   str.replace(/(&#(\d+);)/g, (match, capture, charCode) =>
@@ -71,8 +70,6 @@ const removeCardNodeList = document.querySelectorAll(".remove-card");
 const pickedCard = document.querySelectorAll(".picked-card");
 const basketIcon = document.querySelector(".header__basket");
 const closeCart = document.querySelector(".close-cart");
-console.log(basketIcon);
-console.log(closeCart);
 
 basketIcon.addEventListener("click", () => {
   shopping_cart.style.display = "flex";
