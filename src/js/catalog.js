@@ -145,25 +145,44 @@ const createRange = (title) => {
   h6.textContent = title;
   const inputFirst = document.createElement("input");
   const inputSecond = document.createElement("input");
-  const label = document.createElement("label");
   const moduleDiv = document.createElement("div");
+  const label = document.createElement("label");
   moduleDiv.classList.add("module");
-  label.textContent = "Цена: 50.00 ₽ – 400.00 ₽";
-  label.classList.add("label-range");
   inputFirst.type = "range";
-  inputFirst.value = 0;
   inputFirst.min = 50;
   inputFirst.max = 400;
+  inputFirst.setAttribute("value", 50);
+  inputFirst.id = "id-lower";
   inputSecond.type = "range";
-  inputSecond.value = 400;
   inputSecond.min = 50;
   inputSecond.max = 400;
+  inputSecond.setAttribute("value", 400);
+  inputSecond.id = "id-upper";
+  label.textContent = `Цена: ${inputFirst.value}.00 ₽ – ${inputSecond.value}.00 ₽`;
+  label.classList.add("label-range");
   moduleDiv.appendChild(inputFirst);
   moduleDiv.appendChild(inputSecond);
   block.appendChild(h6);
   block.appendChild(moduleDiv);
   block.appendChild(label);
   containerFilter.appendChild(block);
+
+  const createInputEvent = () => {
+    inputFirst.addEventListener("input", () => {
+      label.textContent = `Цена: ${inputFirst.value}.00 ₽ – ${inputSecond.value}.00 ₽`;
+    });
+
+    inputSecond.addEventListener("input", () => {
+      label.textContent = `Цена: ${inputFirst.value}.00 ₽ – ${inputSecond.value}.00 ₽`;
+    });
+  };
+
+  return createInputEvent;
+};
+
+const setDefaultValueRangeInput = () => {
+  const labelRange = document.querySelector(".label-range");
+  labelRange.textContent = `Цена: 50.00 ₽ – 400.00 ₽`;
 };
 
 const createButtonReset = () => {
@@ -173,12 +192,16 @@ const createButtonReset = () => {
   button.type = "reset";
   button.textContent = "Сбросить фильтр";
   containerFilter.appendChild(button);
+
+  button.addEventListener("click", () => {
+    setDefaultValueRangeInput();
+  });
 };
 
 generateCheckBoxBlocks(objByLight, "По свету");
 generateCheckBoxBlocks(objByColor, "По цвету");
 generateCheckBoxBlocks(objByFormat, "по формату");
-createRange("стоимость");
+const functionClosure = createRange("стоимость");
 generateCheckBoxBlocks(objByFlower, "по цветку");
-
 createButtonReset();
+functionClosure(); // замыкание
