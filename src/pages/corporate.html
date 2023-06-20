@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Corporate Customers</title>
     <link rel="stylesheet" href="/src/styles/css/style.css" />
+    <link rel="stylesheet" href="/src/styles/SCSS/corporate.css" />
     <link
       rel="stylesheet"
       href="/src/components/shopping-cart/shopping-cart.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/src/components/buttons_fontsize/buttons_fontsize.css"
     />
     <!-- ------------ ------------------------ -------------- -->
     <script type="module" defer src="/src/js/header-footer.js"></script>
@@ -67,7 +72,299 @@
       <!-- ---------------------------------------- -->
       <header class="header"></header>
       <main class="content">
-        <h1>start</h1>
+        <!-- ------------Section 1 -------------- -->
+        <section class="section section-1">
+          <div class="elipse elipse-1"></div>
+          <figure>
+            <img
+              src="/src/img/corporate/flower-1-corpotate.png"
+              alt="flower1"
+            />
+          </figure>
+          <div class="elipse elipse-2"></div>
+          <figure>
+            <img
+              src="/src/img/corporate/flower-2-corporate.png"
+              alt="flower2"
+            />
+          </figure>
+          <h6>Главная / корпоративным клиентам</h6>
+          <h1>Букеты</h1>
+          <h2>поздравления для</h2>
+          <h2>Ваших работников</h2>
+          <h3>
+            Если у Вас большое количество сотрудников (или не очень) и вы устали
+            помнить<br />
+            о каждом их Дне рождении и как чем поздравить, то
+            <span>мы можем делат это за Вас</span>.
+          </h3>
+          <p>
+            Одним вариантом сотрудничества является предоставление нам перечня
+            сотрудников с<br />
+            Днями их рождений и мы уже самостоятельно связываемся с каждым,
+            изготавливаем букет<br />
+            либо композицию и доставляем в удобное время сотруднику либо по
+            месту работы либо по<br />
+            месту жительства, так как в настоящее время многие сотрудники
+            продолжают выполнять<br />
+            работу удалённо либо находятся на больничном или в отпуске.
+          </p>
+          <p>
+            Другим вариантом сотрудничества является заказ букетов
+            самостоятельно представителем<br />
+            организации за день до нужной даты.
+          </p>
+          <p>
+            Так вы <span>экономите время</span> остальных сотрудников на сбор
+            денег на поиск подарка и доставку<br />
+            его получателю, а также оберегаете себя от риска пропустить
+            кого-либо из важных<br />
+            организации людей, а именно так Вы проявляете заботу и внимание к
+            сотрудникам для того,<br />
+            чтобы и к делам Вашей организации они относились со всей
+            внимательностью и также не<br />
+            пропускали важные дни.
+          </p>
+        </section>
+        <!-- ------------Section 2 -------------- -->
+        <section class="section section-2">
+          <p>
+            Букеты могут изготавливаться в фирменном<br />
+            цвете организации и есть возможность делать<br />
+            поздравления на Вашей фирменной открытке,<br />
+            которую мы можем изготовить сами.
+          </p>
+          <h6>Стоимость одного букета не менее 60 рублей.</h6>
+          <table>
+            <div class="elipse elipse-3"></div>
+            <tbody>
+              <tr>
+                <th>Количество заявок в месяц</th>
+              </tr>
+
+              <tr>
+                <th>Приятные бонусы</th>
+              </tr>
+
+              <tr>
+                <td>1-2</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Стоимость одной доставки по Минску – 10 рублей,<br />
+                  за пределы МКАД – от 20 рублей
+                </td>
+              </tr>
+
+              <tr>
+                <td>3-10</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Доставка бесплатно<br />
+                  Букет-подарок руководителю в его День рождения
+                </td>
+              </tr>
+
+              <tr>
+                <td>Более 10</td>
+              </tr>
+
+              <tr>
+                <td>
+                  Доставка бесплатно<br />
+                  Букет-подарок руководителю в его День рождения<br />
+                  Праздничная ель перед Новым годом
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <figure>
+            <img
+              src="/src/img/corporate/flower-3-corporate.png"
+              alt="flower3"
+            />
+          </figure>
+          <figure>
+            <img
+              src="/src/img/corporate/flower-4-corporate.png"
+              alt="flower4"
+            />
+          </figure>
+          <div class="stages-work">
+            <h5>этапы работы:</h5>
+            <hr />
+            <ul>
+              <li>Заполнение заявки</li>
+              <li>Подписание договора</li>
+              <li>Вручение цветов</li>
+              <li>Отчет о доставленных заказах</li>
+              <li>оплата</li>
+            </ul>
+          </div>
+        </section>
+        <!-- ------------Section 3 -------------- -->
+        <section class="section section-3">
+          <p>
+            Если у Вас единичный заказ, то можете выбрать<br />
+            букет в каталоге либо заказать индивидуальный<br />
+            букет и указать его стоимость, а при оформлении<br />
+            заказа в корзине указать, что оплата будет<br />
+            производиться с расчётного счёта организации.
+          </p>
+        </section>
+        <!-- ------------Section 4 -------------- -->
+        <section class="section section-4">
+          <h6>заполните заявку:</h6>
+          <form id="form-order" action="">
+            <div class="col col-1">
+              <label for="name-organization">
+                <span>Наименование организации</span>
+                <input
+                  type="text"
+                  id="name-organization"
+                  name="name-organization"
+                  placeholder="Введите наименование вашей организации"
+                  maxlength="20"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="address">
+                <span>Почтовый адрес</span>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  placeholder="Введите почтовый адрес"
+                  maxlength="20"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="name-contact-face">
+                <span>Контактное лицо</span>
+                <input
+                  type="text"
+                  id="name-contact-face"
+                  name="name-contact-face"
+                  placeholder="Введите имя контактного лица"
+                  maxlength="20"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="tel">
+                <span>Контактный номер телефона</span>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="+7 (977) 777-77-77"
+                  pattern="\+7 [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="price">
+                <span>Стоимость букета сотруднику (если разная – указать)</span>
+                <input
+                  type="number"
+                  id="price"
+                  name="price"
+                  placeholder="Укажите стоимость букета сотруднику"
+                  min="50"
+                  max="400"
+                  maxlength="3"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="email">
+                <span>Адрес электронной почты</span>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Укажите ваш адрес электронной почты"
+                  required
+                /><span></span>
+              </label>
+            </div>
+            <div class="col col-2">
+              <label for="ynp">
+                <span>УНП</span>
+                <input
+                  type="text"
+                  id="ynp"
+                  name="ynp"
+                  placeholder="УНП"
+                  maxlength="10"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="bank-account">
+                <span>Расчетный счет</span>
+                <input
+                  type="text"
+                  id="bank-account"
+                  name="bank-account"
+                  placeholder="Введите номер расчетного счета"
+                  maxlength="6"
+                  pattern="#[0-9]{5}"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="bank-code">
+                <span>Код банка</span>
+                <input
+                  type="password"
+                  id="bank-code"
+                  name="bank-code"
+                  placeholder="Код банка"
+                  maxlength="10"
+                  required
+                /><span></span>
+              </label>
+
+              <label for="number-requests">
+                <span>Предполагаемое количество заявок в месяц</span>
+                <input
+                  type="number"
+                  id="number-requests"
+                  name="number-requests"
+                  placeholder="Введите предполагаемое количество заявок в месяц"
+                  min="1"
+                  max="30"
+                  required
+                /><span></span>
+              </label>
+              <figure>
+                <img
+                  src="/src/img/corporate/lover flower.png"
+                  alt="lover-flower"
+                />
+              </figure>
+            </div>
+          </form>
+          <button form="form-order" class="button__catalog" type="submit">
+            отправить
+          </button>
+          <small
+            >Нажимая на кнопку «Отправить», я даю свое согласие на обработку<br />
+            персональных данных, в соответствии с
+            <span>Политикой конфиденциальности</span></small
+          >
+        </section>
+        <!-- ------------Section 5 -------------- -->
+        <section class="section section-5">
+          <div class="elipse elipse-4"></div>
+          <div class="elipse elipse-5"></div>
+        </section>
       </main>
       <footer class="footer"></footer>
     </div>
