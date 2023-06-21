@@ -242,9 +242,12 @@ h6 {
 }
 
 .footer {
+  background: #000000;
   text-transform: uppercase;
   padding: 20px 0;
+  z-index: 3;
 }
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
