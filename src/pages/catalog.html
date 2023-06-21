@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hello</title>
+        <style>
+            img {
+                max-width: 450px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <main></main>
+        <script>
+            async function getData(arg) {
+                const main = document.querySelector("main");
+
+                let res = await fetch(arg);
+                if (res.ok) {
+                    let json = await res.json();
+
+                    json.forEach((el) => {
+                        let img = el.photo;
+                        main.insertAdjacentHTML(
+                            "beforebegin",
+                            `<h2>${el.id.toUpperCase()}</h2>
+                                <p>${el.name.toUpperCase()}</p>
+                                <p>${el.price}</p>
+                                <p>${el.description}</p>
+                                <p>${el.consist}</p>
+                                <p>${el.category}</p>
+                                <p>${el.marks}</p>
+                                <p>${el.photo}</p>
+                                <img src="${img[0]}" alt="photo"/>
+                                <img src="${img[1]}" alt="photo-1"/>
+                                <img src="${img[2]}" alt="photo-2"/>
+                                <img src="${el.photo_mini}" alt="photo-2"/>
+                                <p>------------------------------------------</p>`
+                        );
+                    });
+                } else console.log(`Ошибка получения данных: ${res.status}`);
+            }
+
+            getData("../js/catalog.json");
+        </script>
+    </body>
+</html>
