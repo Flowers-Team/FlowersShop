@@ -16,7 +16,7 @@
       "../img/catalog/001.png",
       "../img/catalog/001.png"
     ],
-    "photo_mini": "../img/catalog/mini/001.png",
+    "photo_mini": "/src/img/catalog/mini/001.png",
     "sale": false,
     "new": false
   },
@@ -33,7 +33,7 @@
       "../img/catalog/002.png",
       "../img/catalog/002.png"
     ],
-    "photo_mini": "../img/catalog/mini/002.png",
+    "photo_mini": "/src/img/catalog/mini/002.png",
     "sale": false,
     "new": false
   },
@@ -63,7 +63,7 @@
       "../img/catalog/003.png",
       "../img/catalog/003.png"
     ],
-    "photo_mini": "../img/catalog/mini/003.png",
+    "photo_mini": "/src/img/catalog/mini/003.png",
     "sale": false,
     "new": false
   },
@@ -86,7 +86,7 @@
       "../img/catalog/004.png",
       "../img/catalog/004.png"
     ],
-    "photo_mini": "../img/catalog/mini/004.png",
+    "photo_mini": "/src/img/catalog/mini/004.png",
     "sale": false,
     "new": false
   },
@@ -109,7 +109,7 @@
       "../img/catalog/005.png",
       "../img/catalog/005.png"
     ],
-    "photo_mini": "../img/catalog/mini/005.png",
+    "photo_mini": "/src/img/catalog/mini/005.png",
     "sale": false,
     "new": false
   },
@@ -131,7 +131,7 @@
       "../img/catalog/006.png",
       "../img/catalog/006.png"
     ],
-    "photo_mini": "../img/catalog/mini/006.png",
+    "photo_mini": "/src/img/catalog/mini/006.png",
     "sale": false,
     "new": false
   },
@@ -159,7 +159,7 @@
       "../img/catalog/007.png",
       "../img/catalog/007.png"
     ],
-    "photo_mini": "../img/catalog/mini/007.png",
+    "photo_mini": "/src/img/catalog/mini/007.png",
     "sale": false,
     "new": false
   },
@@ -183,7 +183,7 @@
       "../img/catalog/008.png",
       "../img/catalog/008.png"
     ],
-    "photo_mini": "../img/catalog/mini/008.png",
+    "photo_mini": "/src/img/catalog/mini/008.png",
     "sale": false,
     "new": false
   },
@@ -205,7 +205,7 @@
       "../img/catalog/009.png",
       "../img/catalog/009.png"
     ],
-    "photo_mini": "../img/catalog/mini/009.png",
+    "photo_mini": "/src/img/catalog/mini/009.png",
     "sale": false,
     "new": false
   },
@@ -229,7 +229,7 @@
       "../img/catalog/010.png",
       "../img/catalog/010.png"
     ],
-    "photo_mini": "../img/catalog/mini/010.png",
+    "photo_mini": "/src/img/catalog/mini/010.png",
     "sale": false,
     "new": false
   },
@@ -253,7 +253,7 @@
       "../img/catalog/011.png",
       "../img/catalog/011.png"
     ],
-    "photo_mini": "../img/catalog/mini/011.png",
+    "photo_mini": "/src/img/catalog/mini/011.png",
     "sale": false,
     "new": false
   },
@@ -276,7 +276,7 @@
       "../img/catalog/012.png",
       "../img/catalog/012.png"
     ],
-    "photo_mini": "../img/catalog/mini/012.png",
+    "photo_mini": "/src/img/catalog/mini/012.png",
     "sale": false,
     "new": false
   },
@@ -306,7 +306,7 @@
       "../img/catalog/013.png",
       "../img/catalog/013.png"
     ],
-    "photo_mini": "../img/catalog/mini/013.png",
+    "photo_mini": "/src/img/catalog/mini/013.png",
     "sale": false,
     "new": false
   }
