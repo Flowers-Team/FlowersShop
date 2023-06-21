@@ -1,40 +1,79 @@
-const array_links = [
-  "/src/img/card/flower-1.png",
-  "/src/img/card/flower-2.png",
-  "/src/img/card/flower-3.png",
-  "/src/img/card/flower-4.png",
-  "/src/img/card/flower-5.png",
-  "/src/img/card/flower-6.png",
-  "/src/img/card/flower-7.png",
-  "/src/img/card/flower-8.png",
-  "/src/img/card/flower-9.png",
-  "/src/img/card/flower-10.png",
-  "/src/img/card/flower-11.png",
-  "/src/img/card/flower-12.png",
-];
+// const array_links = [
+//   "/src/img/catalog/mini/001.png",
+//   "/src/img/card/flower-2.png",
+//   "/src/img/card/flower-3.png",
+//   "/src/img/card/flower-4.png",
+//   "/src/img/card/flower-5.png",
+//   "/src/img/card/flower-6.png",
+//   "/src/img/card/flower-7.png",
+//   "/src/img/card/flower-8.png",
+//   "/src/img/card/flower-9.png",
+//   "/src/img/card/flower-10.png",
+//   "/src/img/card/flower-11.png",
+//   "/src/img/card/flower-12.png",
+// ];
 
-const generateCards = (array) => {
+// const generateCards = (array) => {
+//   const container_cards = document.querySelector(".container-cards");
+//   for (let i = 0; i < array.length; i++) {
+//     const card = document.createElement("article");
+//     const img = document.createElement("img");
+//     const h5 = document.createElement("h5");
+//     const small = document.createElement("small");
+//     const button = document.createElement("button");
+//     card.classList.add("card");
+//     img.src = array[i];
+//     h5.textContent = "лучший день";
+//     small.textContent = "167.000 ₽";
+//     button.textContent = "В корзину";
+//     // button.disabled = true;
+//     card.appendChild(img);
+//     card.appendChild(h5);
+//     card.appendChild(small);
+//     card.appendChild(button);
+//     container_cards.appendChild(card);
+//   }
+// };
+
+async function getData(arg) {
+  let res = await fetch(arg);
+  const arrayLinks = [];
+  if (res.ok) {
+    let json = await res.json();
+    json.forEach((element) => {
+      // element.photo_mini = element.photo_mini.replace("../img/", "/src/");
+      arrayLinks.push(element.photo_mini);
+    });
+    return arrayLinks;
+  } else console.log(`Ошибка получения данных: ${res.status}`);
+}
+
+const generateCards = () => {
   const container_cards = document.querySelector(".container-cards");
-  for (let i = 0; i < array.length; i++) {
-    const card = document.createElement("article");
-    const img = document.createElement("img");
-    const h5 = document.createElement("h5");
-    const small = document.createElement("small");
-    const button = document.createElement("button");
-
-    card.classList.add("card");
-    img.src = array[i];
-    h5.textContent = "лучший день";
-    small.textContent = "167.000 ₽";
-    button.textContent = "В корзину";
-    // button.disabled = true;
-    card.appendChild(img);
-    card.appendChild(h5);
-    card.appendChild(small);
-    card.appendChild(button);
-    container_cards.appendChild(card);
-  }
+  const res = getData("/src/js/catalog.json");
+  res.then((data) => {
+    data.forEach((element) => {
+      const card = document.createElement("article");
+      const img = document.createElement("img");
+      const h5 = document.createElement("h5");
+      const small = document.createElement("small");
+      const button = document.createElement("button");
+      card.classList.add("card");
+      img.src = element;
+      h5.textContent = "лучший день";
+      small.textContent = "167.000 ₽";
+      button.textContent = "В корзину";
+      // button.disabled = true;
+      card.appendChild(img);
+      card.appendChild(h5);
+      card.appendChild(small);
+      card.appendChild(button);
+      container_cards.appendChild(card);
+    });
+  });
 };
+
+generateCards();
 
 const generateCircleNew = (card) => {
   const circle_new = document.createElement("div");
@@ -54,22 +93,10 @@ const generateCircleSale = (card) => {
   card.appendChild(circle_sale);
 };
 
-generateCards(array_links);
-
 const cards = document.querySelectorAll(".card");
 
-generateCircleNew(cards[1]);
-generateCircleSale(cards[3]);
-generateCircleSale(cards[5]);
-generateCircleSale(cards[8]);
-generateCircleSale(cards[10]);
-
-async function getData(arg) {
-  let res = await fetch(arg);
-  if (res.ok) {
-    let json = await res.json();
-    console.log(json);
-  } else console.log(`Ошибка получения данных: ${res.status}`);
-}
-
-getData("/src/js/catalog.json");
+// generateCircleNew(cards[1]);
+// generateCircleSale(cards[3]);
+// generateCircleSale(cards[5]);
+// generateCircleSale(cards[8]);
+// generateCircleSale(cards[10]);

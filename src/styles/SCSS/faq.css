@@ -1,0 +1,286 @@
+.header,
+.footer {
+  position: relative;
+  background-color: black;
+  position: relative;
+  z-index: 1;
+}
+
+.header._active {
+  z-index: 4;
+}
+.header._active::after {
+  z-index: 1;
+}
+.header::before {
+  content: "";
+  background-image: url("/src//src/img/faq/bg2.png");
+  width: 74px;
+  height: 153px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.header::after {
+  content: "";
+  background-image: url("/src//src/img/faq/bg1.png");
+  width: 380px;
+  height: 545px;
+  position: absolute;
+  top: 42px;
+  right: 0;
+  z-index: 10;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  width: 465.71px;
+  height: 220.33px;
+  left: -220px;
+  top: 0;
+  background: #3d5279;
+  filter: blur(125px);
+  transform: rotate(-71.86deg);
+}
+.content::after {
+  content: "";
+  position: absolute;
+  width: 327.89px;
+  height: 220.33px;
+  right: 200px;
+  top: 0;
+  background: #3d5279;
+  filter: blur(125px);
+  transform: rotate(-118deg);
+}
+
+.content-wrapper {
+  padding: 10px;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Oswald";
+  font-style: normal;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+.content-wrapper .content-nav {
+  padding: 35px 0 0 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.content-wrapper .content-line {
+  width: 65px;
+  height: 1px;
+  border: 1px solid #43ffd2;
+}
+.content-wrapper .accordion {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 825px;
+  border: 1px solid #43ffd2;
+  margin: 10px 0;
+}
+.content-wrapper .accordion__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1130 - 320));
+  line-height: calc(21px + (30 - 21) * (100vw - 320px) / (1130 - 320));
+  text-transform: uppercase;
+  color: #43ffd2;
+  padding: 20px;
+  cursor: pointer;
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__title {
+    line-height: 30px;
+  }
+}
+.content-wrapper .accordion__title span {
+  display: inline-flex;
+  position: relative;
+  width: calc(20px + (40 - 20) * (100vw - 320px) / (1130 - 320));
+  height: calc(20px + (40 - 20) * (100vw - 320px) / (1130 - 320));
+  min-width: 22px;
+  background-color: transparent;
+  transform: rotate(0);
+  transition: transform 0.5s ease-out;
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__title span {
+    width: 40px;
+  }
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__title span {
+    height: 40px;
+  }
+}
+.content-wrapper .accordion__title._active span::after {
+  content: "";
+  height: 0;
+}
+.content-wrapper .accordion__title span::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #43ffd2;
+}
+.content-wrapper .accordion__title span::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #43ffd2;
+}
+.content-wrapper .accordion__content {
+  font-weight: 300;
+  font-size: calc(14px + (20 - 14) * (100vw - 320px) / (1130 - 320));
+  line-height: calc(21px + (30 - 21) * (100vw - 320px) / (1130 - 320));
+  color: #ffffff;
+  padding: 0 20px;
+  overflow: hidden;
+  box-sizing: content-box;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+    opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__content {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1130px) {
+  .content-wrapper .accordion__content {
+    line-height: 30px;
+  }
+}
+.content-wrapper .accordion__content._active {
+  visibility: visible;
+  opacity: 1;
+  padding: 20px;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out,
+    opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.content-wrapper__title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 46px;
+}
+
+.content-wrapper__faq {
+  margin: 40px auto 200px auto;
+  margin-bottom: calc(100px + (200 - 100) * (100vw - 320px) / (1130 - 320));
+}
+@media (min-width: 1130px) {
+  .content-wrapper__faq {
+    margin-bottom: 200px;
+  }
+}
+
+.content-background {
+  position: relative;
+}
+.content-background::before {
+  content: "";
+  width: 205.97px;
+  height: 436.52px;
+  position: absolute;
+  right: 73px;
+  bottom: -100px;
+  background: #3d5279;
+  filter: blur(125px);
+  transform: rotate(21.1deg);
+}
+.content-background::after {
+  content: "";
+  width: 205.97px;
+  height: 436.52px;
+  position: absolute;
+  left: 0;
+  bottom: -100px;
+  background: #3d5279;
+  filter: blur(125px);
+  transform: rotate(21.1deg);
+}
+
+@media (max-width: 900px) {
+  .header::before {
+    background-image: url("/src//src/img/faq/bg2_small.png");
+    width: 15px;
+    height: 60px;
+    top: 40px;
+  }
+  .header::after {
+    background-image: url("/src//src/img/faq/bg1_small.png");
+    width: 137px;
+    height: 191px;
+    top: 50px;
+  }
+  .content-wrapper__title {
+    margin-top: 0;
+  }
+  .content-wrapper__faq {
+    margin: 20px auto 100px auto;
+  }
+  .content-line {
+    display: none;
+  }
+  .content::after {
+    content: none;
+  }
+  .content-wrapper .content-nav {
+    padding: 15px 0 0 0;
+  }
+  .content-wrapper .accordion__title {
+    padding: 15px 10px 15px 10px;
+  }
+  .content-wrapper .accordion__title > h3 {
+    padding: 0 22px 0 0;
+  }
+  .content-wrapper .accordion__content {
+    padding: 0 10px;
+  }
+  .content-wrapper .accordion__content._active {
+    padding: 0 10px 10px 10px;
+  }
+  .content-background::before {
+    content: "";
+    width: 258.32px;
+    height: 106.64px;
+    left: 50px;
+    position: absolute;
+    bottom: 0;
+    background: #3d5279;
+    filter: blur(50px);
+    transform: rotate(21.1deg);
+  }
+  .content-background::after {
+    content: none;
+  }
+} /*# sourceMappingURL=faq.css.map */
