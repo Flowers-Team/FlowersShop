@@ -63,3 +63,13 @@ generateCircleSale(cards[3]);
 generateCircleSale(cards[5]);
 generateCircleSale(cards[8]);
 generateCircleSale(cards[10]);
+
+async function getData(arg) {
+  let res = await fetch(arg);
+  if (res.ok) {
+    let json = await res.json();
+    console.log(json);
+  } else console.log(`Ошибка получения данных: ${res.status}`);
+}
+
+getData("/src/js/catalog.json");
