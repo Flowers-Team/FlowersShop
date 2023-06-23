@@ -10,7 +10,10 @@ body {
 .wrapper {
     overflow: hidden;
 }
-
+.header {
+    position: relative;
+    z-index: 4;
+}
 .contacts {
     margin-bottom: 45px;
     position: relative;
