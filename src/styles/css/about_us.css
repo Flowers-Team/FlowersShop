@@ -63,6 +63,10 @@ body {
     color: #FFFFFF;
     background: #040A0A;
 }
+.content{
+    position: relative;
+    z-index: 6;
+}
 
 .about__us {
     position: relative;
@@ -74,6 +78,7 @@ body {
     margin: 0 auto;
     max-width: 320px;
     padding: 0 10px;
+    overflow: visible;
 }
 
 
