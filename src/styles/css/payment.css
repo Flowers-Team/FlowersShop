@@ -65,6 +65,10 @@ body {
     color: #FFFFFF;
     background: #040A0A;
 }
+.content{
+    position: relative;
+    z-index: 6;
+}
 
 .payment {
     overflow: hidden;
@@ -74,7 +78,7 @@ body {
     max-width: 1130px;
     margin: 0 auto;
     padding: 0 10px;
-    /* overflow: hidden; */
+    overflow: visible;
 }
 
 .payment_bred_crumbs::before {
