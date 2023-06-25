@@ -88,7 +88,7 @@ body {
 .content .section-1 > figure:first-of-type {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 5%;
   z-index: 3;
 }
 @media (width < 1150px) {
