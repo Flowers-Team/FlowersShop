@@ -1,0 +1,31 @@
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* width */
+:root::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Handle */
+:root::-webkit-scrollbar-thumb {
+  background: #7d2253;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.elipse {
+  position: absolute;
+  filter: blur(125px) saturate(150%);
+  background: #7d2253;
+  z-index: 1;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}/*# sourceMappingURL=payment-success.css.map */
