@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success Payment Page</title>
+    <link rel="stylesheet" href="/src/styles/css/style.css" />
+    <link rel="stylesheet" href="/src/styles/SCSS/payment-success.css" />
+    <link
+      rel="stylesheet"
+      href="/src/components/shopping-cart/shopping-cart.css"
+    />
+    <!-- ------------ ------------------------ -------------- -->
+    <script type="module" defer src="/src/js/header-footer.js"></script>
+    <script
+      type="module"
+      defer
+      src="/src/components/shopping-cart/shopping-cart.js"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ------------Shopping Cart -------------- -->
+      <div class="shopping-cart">
+        <div class="blur"></div>
+        <section class="title">
+          <h2>Ваша корзина</h2>
+          <div class="close-cart"></div>
+          <hr />
+        </section>
+        <section class="container-cards-shopping-cart"></section>
+        <section class="end">
+          <h6>Добавьте к заказу <span>Шары:</span></h6>
+          <div class="container">
+            <div class="col col-1">
+              <img
+                src="/src/img/shopping-cart/balloon-star.png"
+                alt="balloon-star"
+              />
+              <div class="container">
+                <p>ШАР “ЗВЕЗДА”</p>
+                <small>11.00 ₽</small>
+                <a href="#">Добавить</a>
+              </div>
+            </div>
+            <div class="col col-2">
+              <img
+                src="/src/img/shopping-cart/balloon-heart.png"
+                alt="balloon-heart"
+              />
+              <div class="container">
+                <p>ШАР “СЕРДЦЕ”</p>
+                <small>11.00 ₽</small>
+                <a href="#">Добавить</a>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <p>
+            Предварительный итог: 315.00 руб.<br />
+            Чтобы узнать стоимость доставки, перейдите<br />
+            к оформлению заказа.
+          </p>
+          <button>Оформить заказ</button>
+        </section>
+      </div>
+      <!-- ---------------------------------------- -->
+      <header class="header"></header>
+      <main class="content">
+        <!-- ------------Section 1 -------------- -->
+        <section class="section section-1">
+          <div class="elipse elipse-1"></div>
+          <div class="elipse elipse-2"></div>
+          <h2>Оплата прошла</h2>
+          <div class="container">
+            <hr />
+            <h2>успешно!</h2>
+          </div>
+          <p>Ваш номер заказа – 395808599</p>
+          <p>
+            Спасибо за заказ!<br />
+            Вы получите уведомление о статусе вашего заказа
+          </p>
+          <a href="main.html">на главную</a>
+          <figure>
+            <img
+              src="/src//img/payment-success/lover-flower.png"
+              alt="flower"
+            />
+          </figure>
+        </section>
+        <!-- ------------Section 2 -------------- -->
+        <section class="section section-2">
+          <figure>
+            <img src="/src/img/payment-success/myflower.png" alt="flower" />
+          </figure>
+          <div class="elipse elipse-3"></div>
+          <div class="elipse elipse-4"></div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
