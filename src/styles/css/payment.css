@@ -1,0 +1,542 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+/* ul[class],
+ol[class] {
+    padding: 0;
+} */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* ul li {
+    list-style: disc;
+} */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #040A0A;
+}
+.content{
+    position: relative;
+    z-index: 6;
+}
+
+.payment {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+    padding: 0 10px;
+    overflow: visible;
+}
+
+.payment_bred_crumbs::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: -85px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(100px);
+    transform: rotate(-71.859deg);
+    z-index: -1;
+    width: 274px;
+    height: 220px;
+}
+
+.payment_bred_crumbs {
+    margin: 20px 0;
+    position: relative;
+}
+
+.payment_bred_crumbs::after {
+    content: "";
+    background-image: url(../../img/payment/roses-right.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: 100%;
+    z-index: -1;
+    left: 66%;
+    top: -10px;
+}
+
+.payment_crumbs-list {
+    display: flex;
+    justify-content: space-between;
+    max-width: 171px;
+    list-style: none;
+    padding: 0;
+}
+
+.payment_crumbs-item a {
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.payment_crumbs-item:nth-child(1):after {
+    content: "/";
+    margin: 0 4px;
+    color: #FFFFFF;
+}
+
+.payment_title {
+    margin-bottom: 53px;
+    max-width: 350px;
+}
+
+.payment_title span {
+    margin-left: 51px;
+}
+
+
+
+.payment__content-information {
+    margin-left: 34px;
+    margin-bottom: 60px;
+}
+
+.payment__content-title {
+    font-weight: 700;
+    color: #D978AC;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.content-title {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.payment__content-information-subtitle::before{
+    content: "!";
+    position: absolute;
+    top: -72px;
+    left: -30px;
+       font-size: 100px;
+    font-family: Cormorant;
+    letter-spacing: 2px;
+    color: #D978AC;
+}
+
+.payment__content-information-subtitle {
+    position: relative;
+    max-width: 570px;
+}
+
+.payment__content-payment::before {
+    content: "";
+    position: absolute;
+    top: 117px;
+    left: 59px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(100px);
+    transform: rotate(-71.859deg);
+    z-index: -1;
+    width: 274px;
+    height: 220px;
+}
+
+.payment__content-payment {
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+.payment__content-payment::after {
+    content: "";
+    position: absolute;
+    top: 577px;
+    left: -36px;
+    border-radius: 395px;
+    background-color: #6B535F;
+    filter: blur(100px);
+    transform: rotate(-71.859deg);
+    z-index: -1;
+    width: 395px;
+    height: 220px;
+}
+
+
+
+.payment__content-payment-lists {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li.payment__content-payment-item {
+    line-height: 1.8;
+    text-align: center;
+    padding: 0 12px;
+    max-width: 197px;
+    width: 100%;
+    height: 185px;
+    margin-bottom: 20px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.20);
+    ;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.payment__content-cost_of_delivery-list {
+    margin-bottom: 50px;
+    padding-left: 16px;
+
+}
+
+li.payment__content-cost_of_delivery-item {
+    letter-spacing: 0.02em;
+    max-width: 218px;
+    margin-bottom: 10px;
+}
+
+.payment__content-cost_of_delivery-item span,
+.payment__content-delivery_terms-item span,
+.payment__content-additionally a {
+    color: #43FFD2;
+}
+
+.payment__content-cost_of_delivery-item a {
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.payment__content-delivery_terms::before {
+    content: "";
+    position: absolute;
+    top: 23px;
+    left: -115px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(100px);
+    transform: rotate(-71.859deg);
+    z-index: -1;
+    width: 274px;
+    height: 220px;
+}
+
+.payment__content-delivery_terms {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.payment__content-delivery_terms::after {
+    content: "";
+    background-image: url(../../img/payment/roses-center.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 530px;
+    width: 115%;
+    z-index: -1;
+    left: -230px;
+    top: 12px;
+}
+
+ul.payment__content-delivery_terms-lists {
+    padding-left: 16px;
+}
+
+li.payment__content-delivery_terms-item {
+    letter-spacing: 0.02em;
+    max-width: 600px;
+}
+
+.wrap__content::before {
+    content: "";
+    position: absolute;
+    bottom: -163px;
+    left: -73px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(50px);
+    transform: rotate(21.859deg);
+    z-index: -1;
+    width: 258px;
+    height: 106px;
+}
+
+.wrap__content {
+    padding: 20px 10px 0px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    margin-bottom: 160px;
+    position: relative;
+    max-width: 961px;
+}
+
+.wrap__content::after {
+    content: "";
+    position: absolute;
+    bottom: -109px;
+    right: -138px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(50px);
+    transform: rotate(21.859deg);
+    z-index: -2;
+    width: 258px;
+    height: 106px;
+}
+
+.payment__content-additionally::before {
+    content: "";
+    position: absolute;
+    top: 514px;
+    left: 105px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(125px);
+    transform: rotate(-71.859deg);
+    z-index: -2;
+    width: 326px;
+    height: 261px;
+}
+
+.payment__content-additionally {
+    margin-bottom: 60px;
+    position: relative;
+
+}
+
+.payment__content-additionally p {
+    text-transform: none;
+    max-width: 867px;
+
+}
+
+ul.payment__content-additionally-lists {
+    margin-bottom: 35px;
+    padding-left: 24px;
+}
+
+.payment__content-additionally-item {
+    text-transform: none;
+}
+
+.payment__content-refund {
+    position: relative;
+}
+
+.payment__content-refund::after {
+    content: "";
+    background-image: url(../../img/payment/roses-bottom.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 485px;
+    width: 234%;
+    z-index: -1;
+    left: 63px;
+    bottom: -403px;
+}
+
+.payment__content-refund p {
+    text-transform: none;
+    margin-bottom: 30px;
+
+}
+
+
+
+@media (min-width: 550px) {
+
+    .payment_bred_crumbs::after {
+        content: "";
+        background-image: url(../../img/payment/roses-right_bg.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 664px;
+        background-size: contain;
+        width: 100%;
+        z-index: -1;
+        left: 65%;
+        top: -10px;
+    }
+
+    .payment_title {
+        max-width: 420px;
+    }
+
+    .payment__content-delivery_terms::after {
+        content: "";
+        background-image: url(../../img/payment/roses-center.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 530px;
+        width: 115%;
+        z-index: -1;
+        left: -230px;
+        top: 12px;
+    }
+
+    .payment__content-refund::after {
+        content: "";
+    background-image: url(../../img/payment/roses-bottom_bg.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 874px;
+    z-index: -1;
+    left: 50%;
+    top: 88px;
+    }
+
+    .content-title {
+        text-align: left;
+    }
+
+    li.payment__content-cost_of_delivery-item {
+        max-width: 576px;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .payment_title {
+        max-width: 542px;
+    }
+    .payment_title span {
+        margin-left: 107px;
+    }
+    .payment__content-payment::before {
+        top: 98px;
+        left: 138px;
+        width: 383px;
+        height: 264px;
+    }
+    .payment__content-information-subtitle::before{
+        top: -77px;
+  }
+ 
+    li.payment__content-payment-item {
+                max-width: 255px;
+        height: 211px;
+        padding: 0 32px;
+        line-height: 1.3;
+    }
+    .wrapper_payment__content{
+        margin-left: 34px;
+    }
+
+    li.payment__content-cost_of_delivery-item,
+    li.payment__content-delivery_terms-item,
+    .payment__content-title,
+    li.payment__content-payment-item,
+    .payment__content-additionally-item,
+    .payment__content-additionally p,
+    .payment__content-refund p {
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .payment__content-information {
+        margin-left: 100px;
+        
+    }
+    .payment_title {
+        max-width: 647px;
+    }
+       .payment_title::before {
+        content: "";
+        position: absolute;
+        top: -344px;
+        right: -617px;
+        border-radius: 274.924px;
+        background-color: #6B535F;
+        filter: blur(125px);
+        transform: rotate(-71.859deg);
+        z-index: -2;
+        width: 504px;
+        height: 625px;
+    }
+    .payment_title {
+        position: relative;
+    }
+   
+
+    .payment__content-payment-lists::before {
+        content: "";
+    position: absolute;
+    top: 42px;
+    right: 99px;
+    border-radius: 274.924px;
+    background-color: #6B535F;
+    filter: blur(125px);
+    transform: rotate(-71.859deg);
+    z-index: -2;
+    width: 345px;
+    height: 220px;
+}
+.payment__content-additionally::before {
+      top: -45px;
+    left: 445px;
+       width: 537px;
+    height: 431px;
+}
+
+}
