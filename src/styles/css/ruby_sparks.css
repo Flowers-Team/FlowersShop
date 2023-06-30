@@ -1,0 +1,153 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+ul li {
+    list-style: disc;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    color: #FFFFFF;
+    background: #040A0A;
+}
+
+.ruby_bred_crumbs {
+    margin: 20px 0;
+}
+
+
+ul.ruby_crumbs-list {
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    flex-direction: row;
+       flex-wrap: wrap;
+    
+}
+li.ruby_crumbs-item{
+    list-style: none;
+    display: flex;
+   
+}
+li.ruby_crumbs-item a {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+li.ruby_crumbs-item:not(:last-child):after {
+    content: "/";
+    margin: 0 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+}
+.ruby_link{
+    margin-top: 20px;
+    margin-left: 17px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.addition-title{
+    color: #D978AC;
+font-size: 20px;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.8px;
+text-transform: uppercase;
+margin-bottom: 35px;
+}
+.ruby__content-addition-lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ruby__content-addition-item{
+    padding: 30px 19px;
+max-width: 255px;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 20px;
+background-color: rgba(197, 16, 16, 0.3);
+backdrop-filter: blur(10px);
+margin-bottom: 30px;
+}
+.ruby__content-addition-title{
+max-width: 155px;
+        color: #43FFD2;
+    text-align: center;
+      font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.ruby__content-addition-subtitle{
+    font-weight: 400;
+line-height: normal;
+letter-spacing: 0.84px;
+text-align: center;
+
+}
