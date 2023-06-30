@@ -10,8 +10,11 @@
     <link rel="stylesheet" href="../fonts/Cormorant/stylesheet.css">
     <link rel="stylesheet" href="../fonts/Oswald/stylesheet.css">
     <link rel="stylesheet" href="../components/buttons_fontsize/buttons_fontsize.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/css/ruby_sparks.css">
     <!-- <script type="module" defer src="/src/js/header-footer.js"></script> -->
+    <script type="module" defer src="../js/ruby_sparks.js"></script>
 </head>
 
 <body>
@@ -73,17 +76,17 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="ruby__content-ruby-inner">
+                            <a class="ruby__content-ruby-link active-link" href="#">доставка и оплата</a>
+                            <a class="ruby__content-ruby-link reviews-link" href="#">отзывы <span>(0)</span> </a>
+                        </div>
                         <div class="ruby__content-ruby">
-                            <div class="ruby__content-ruby-inner">
-                                <a class="ruby__content-ruby-link" href="#">доставка и оплата</a>
-                                <a class="ruby__content-ruby-link" href="#">отзывы <span>(0)</span> </a>
-                            </div>
                             <h2 class="ruby__content-title content-title">Способы оплаты:</h2>
                             <ul class="ruby__content-ruby-lists">
                                 <li class="ruby__content-ruby-item">БАНКОВСКОЙ КАРТОЙ ПРИ ОФОРМЛЕНИИ ЗАКАЗА ЧЕРЕЗ
-                                    САЙТ или по ссылке</li>
+                                    САЙТ</li>
                                 <li class="ruby__content-ruby-item">НАЛИЧНЫМИ, БАНКОВСКОЙ КАРТОЙ ПРИ САМОВЫВОЗЕ
-                                    или с расчетного счета орагнизации</li>
+                                </li>
                                 <li class="ruby__content-ruby-item">НАЛИЧНЫМИ ПРИ ДОСТАВКЕ КУРЬЕРОМ</li>
                                 <li class="ruby__content-ruby-item">КРИПТОВАЛЮТОЙ</li>
                             </ul>
@@ -105,9 +108,40 @@
                                 </ul>
                             </div>
                             <div class="ruby__content-reviews">
-                                <h4 class="ruby__content-reviews-title"></h4>
-                                <p class="ruby__content-reviews-subtitle"></p>
-                                <form action="#">
+                                <h4 class="ruby__content-reviews-title">Будьте первым, кто оставил отзыв на “Рубиновые
+                                    искры”</h4>
+                                <p class="ruby__content-reviews-subtitle">Ваш адрес email не будет опубликован.
+                                    Обязательные поля помечены *</p>
+                                <form class="form-star" action="#">
+                                    <div class="form-group">
+                                        <label class="form-group_help">Ваша оценка:</label>
+                                        <div class="star-rating">
+                                            <div class="star-rating__wrap">
+                                                <input class="star-rating__input" id="star-5" type="radio" name="rating"
+                                                    value="5">
+                                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-5"
+                                                    title="Отлично"></label>
+                                                <input class="star-rating__input" id="star-4" type="radio" name="rating"
+                                                    value="4">
+                                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-4"
+                                                    title="Хорошо"></label>
+                                                <input class="star-rating__input" id="star-3" type="radio" name="rating"
+                                                    value="3">
+                                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-3"
+                                                    title="Удовлетворительно"></label>
+                                                <input class="star-rating__input" id="star-2" type="radio" name="rating"
+                                                    value="2">
+                                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-2"
+                                                    title="Плохо"></label>
+                                                <input class="star-rating__input" id="star-1" type="radio" name="rating"
+                                                    value="1">
+                                                <label class="star-rating__ico fa fa-star-o fa-lg" for="star-1"
+                                                    title="Ужасно"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <form class="form" action="#">
                                     <label for="message">Ваш отзыв*</label>
                                     <textarea id="message" placeholder="Введите комментарий" required></textarea>
                                     <label for="name">Имя*</label>
@@ -126,12 +160,9 @@
                                 <h2 class="ruby__content-title">Условия доставки:</h2>
                                 <ul class="ruby__content-delivery_terms-lists">
                                     <li class="ruby__content-delivery_terms-item">
-                                        Доставка осуществляется по городу Минску в пределах МКАД <span>в любой день
-                                        </span>
-                                    </li>
-                                    <li class="ruby__content-delivery_terms-item">
-                                        Возможность, сроки и стоимость доставки за пределы МКАД, доставки в ночное
-                                        время, праздники <span>оговариваются с менеджером</span>
+                                        Доставка осуществляется по городу Минску в пределах МКАД <span>в любой день с
+                                            09.00 до 22.00.</span> Доставка в ночное время осуществляется по
+                                        договоренности с оператором
                                     </li>
                                 </ul>
                             </div>
