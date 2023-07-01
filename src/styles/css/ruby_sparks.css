@@ -53,6 +53,7 @@ a {
     text-decoration: none;
 }
 
+
 body {
     min-height: 100vh;
     font-family: 'Oswald', sans-serif;
@@ -63,9 +64,43 @@ body {
     color: #FFFFFF;
     background: #040A0A;
 }
+.footer__description-list li,
+.header__soc-links li {
+      list-style: none;
+}
+
+.ruby_bred_crumbs::before {
+    content: "";
+    position: absolute;
+    top: -42px;
+    left: -334px;
+    border-radius: 576px;
+    background-color: #7D2253;
+    filter: blur(75px);
+    transform: rotate(32deg);
+    z-index: -1;
+    width: 576px;
+    height: 89px;
+}
 
 .ruby_bred_crumbs {
     margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.ruby_bred_crumbs::after {
+    content: "";
+    position: absolute;
+    top: -123px;
+    right: -78px;
+    border-radius: 217px;
+    background-color: #43FFD2;
+    filter: blur(125px);
+    transform: rotate(-72deg);
+    z-index: -1;
+    width: 217px;
+    height: 173px;
 }
 
 
@@ -101,6 +136,39 @@ li.ruby_crumbs-item:not(:last-child):after {
     font-size: 12px;
 }
 
+.ruby__content::before {
+    content: "";
+    position: absolute;
+    bottom: -158px;
+    right: -42px;
+    border-radius: 188px;
+    background-color: #7D2253;
+    filter: blur(50px);
+    transform: rotate(32deg);
+    z-index: -1;
+    width: 188px;
+    height: 193px;
+}
+
+.ruby__content {
+    position: relative;
+    z-index: 1;
+}
+
+.ruby__content::after {
+    content: "";
+    position: absolute;
+    bottom: -156px;
+    left: -132px;
+    border-radius: 258px;
+    background-color: #43FFD2;
+    filter: blur(50px);
+    transform: rotate(22deg);
+    z-index: -1;
+    width: 258px;
+    height: 106px;
+}
+
 .ruby_link {
     margin-top: 20px;
     margin-left: 17px;
@@ -112,6 +180,67 @@ li.ruby_crumbs-item:not(:last-child):after {
     color: #FFFFFF;
 }
 
+.ruby__description {
+    margin-bottom: 832px;
+}
+
+.ruby__content-addition::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    right: -255px;
+    border-radius: 560px;
+    background-color: #7D2253;
+    filter: blur(125px);
+    transform: rotate(22deg);
+    z-index: -2;
+    width: 560px;
+    height: 255px;
+}
+
+.ruby__content-addition {
+    position: relative;
+    z-index: 1;
+}
+
+.ruby__content-addition::after {
+    content: "";
+    position: absolute;
+    bottom: 292px;
+    left: -40px;
+    border-radius: 217px;
+    background-color: #43FFD2;
+    filter: blur(125px);
+    transform: rotate(-72deg);
+    z-index: -2;
+    width: 217px;
+    height: 173px;
+}
+
+.ruby__content-title {
+    color: #D978AC;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.addition-title::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -32px;
+    border-radius: 560px;
+    background-color: #7D2253;
+    filter: blur(125px);
+    transform: rotate(22deg);
+    z-index: -1;
+    width: 560px;
+    height: 255px;
+}
+
 .addition-title {
     color: #D978AC;
     font-size: 20px;
@@ -120,6 +249,9 @@ li.ruby_crumbs-item:not(:last-child):after {
     letter-spacing: 0.8px;
     text-transform: uppercase;
     margin-bottom: 35px;
+    text-align: center;
+
+
 }
 
 .ruby__content-addition {
@@ -164,31 +296,62 @@ li.ruby_crumbs-item:not(:last-child):after {
 
 }
 
+
+
+.ruby__content-ruby-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 300px;
+    height: 1px;
+    background-color: #555555;
+}
+
+.ruby__content-ruby-link.active-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 150px;
+    height: 3px;
+    background-color: #43FFD2;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+.ruby__content-ruby-link.reviews-link.active-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 150px;
+    height: 3px;
+    background-color: #43FFD2;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
 .ruby__content-ruby-inner {
     margin-bottom: 36px;
     display: flex;
     gap: 50px;
+    position: relative;
 }
-.ruby__content-ruby-link{
+
+.ruby__content-ruby-link {
     color: #555;
-letter-spacing: 0.56px;
-text-transform: uppercase;
-}
-.active-link{
-    color: #43FFD2;
-font-weight: 700;
-line-height: normal;
-}
-
-.ruby__content-title {
-    color: #D978AC;
-    font-size: 20px;
-     font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.56px;
     text-transform: uppercase;
-    text-align: center;
+    transition: 0.3s ease;
+}
 
+.active-link {
+    color: #43FFD2;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 16px;
+    margin-left: 7px;
 }
 
 ul.ruby__content-ruby-lists {
@@ -211,6 +374,7 @@ li.ruby__content-cost_of_delivery-item {
     letter-spacing: 0.28px;
     text-transform: uppercase;
 }
+
 .ruby__content-cost_of_delivery-item span,
 .ruby__content-delivery_terms-item span,
 .ruby__content-additionally a {
@@ -221,7 +385,8 @@ li.ruby__content-cost_of_delivery-item {
     color: #FFFFFF;
     font-weight: 700;
 }
-.ruby__content-reviews-title{
+
+.ruby__content-reviews-title {
     color: #43FFD2;
     font-weight: 400;
     letter-spacing: 0.84px;
@@ -229,7 +394,8 @@ li.ruby__content-cost_of_delivery-item {
     max-width: 255px;
     margin-bottom: 10px;
 }
-.ruby__content-reviews-subtitle{
+
+.ruby__content-reviews-subtitle {
     max-width: 255px;
     font-weight: 400;
     margin-bottom: 30px;
@@ -256,17 +422,19 @@ li.ruby__content-cost_of_delivery-item {
 
 }
 
+.form-star {
+    margin-bottom: 20px;
+}
+
 .form-group_help {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    /* text-align: center; */
-    margin: 0 0 16px 0;
+    color: #FFF;
+    font-weight: 400;
 
 }
+
 .star-rating {
     font-size: 0;
+    margin-top: 4px;
 }
 
 .star-rating__wrap {
@@ -360,14 +528,16 @@ li.ruby__content-cost_of_delivery-item {
     text-decoration-line: underline;
     color: #D978AC;
 }
-label{
+
+label {
     font-weight: 400;
 
 }
-.ruby__content-delivery_terms{
+
+.ruby__content-delivery_terms {
     margin-bottom: 100px;
 }
 
-.ruby__content-delivery_terms-item{
+.ruby__content-delivery_terms-item {
     text-transform: uppercase;
 }
