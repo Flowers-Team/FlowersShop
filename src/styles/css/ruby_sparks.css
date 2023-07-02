@@ -576,8 +576,23 @@ label {
     text-transform: uppercase;
 }
 
+.content_btn{
+    display: none;
+}
+
+
 
 @media (min-width: 525px) {
+    .ruby__content::after {
+        bottom: -906px;
+        filter: blur(125px);
+    }
+
+    .ruby__content::before {
+        bottom: -948px;
+        filter: blur(71px);
+    }
+
     .ruby__content-addition::after {
         display: none;
     }
@@ -654,7 +669,7 @@ label {
 
     .ruby__content-title {
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 45px;
     }
 
     li.ruby__content-ruby-item {
@@ -670,5 +685,78 @@ label {
         font-size: 20px;
         list-style: none;
     }
+  
 
 }
+
+@media (min-width: 700px) {
+    .content_btn{
+        display: block;
+    }
+    .content {
+        max-width: 555px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 200px;
+    }
+    
+    .container-cards-title {
+        color: #43FFD2;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    
+    .content .container-cards {
+        column-gap: 3rem;
+        transition: all 1s;
+        grid-template-columns: repeat(26, minmax(25rem, 1fr));
+        justify-items: start;
+    }
+    .content_btn{
+        position: relative;
+        max-width: 735px;
+                margin: 0 auto;
+        width: 100%;
+    }
+    
+    .slider-blog__prev-button {
+        background-image: url('../../img/ruby_sparks/prev.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+           height: 6px;
+        position: absolute;
+        right: 0px;
+        bottom: 544px;
+    
+    }
+    
+    .slider-blog__next-button {
+        background-image: url('../../img/ruby_sparks/next.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 80px;
+            height: 6px;
+        position: absolute;
+        left: 0px;
+        bottom: 544px;
+    
+    }
+}
+
+
+@media (min-width: 1320px) {
+    .content_btn{
+        max-width: 1315px;
+
+    }
+    .content {
+        max-width: 1110px;
+       
+    }
+    
+   }
