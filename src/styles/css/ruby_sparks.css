@@ -53,6 +53,19 @@ a {
     text-decoration: none;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
+.header,
+.footer {
+    z-index: 3;
+    ;
+}
+
+.container {
+    overflow: inherit;
+}
 
 body {
     min-height: 100vh;
@@ -64,9 +77,13 @@ body {
     color: #FFFFFF;
     background: #040A0A;
 }
+
 .footer__description-list li,
-.header__soc-links li {
-      list-style: none;
+.header__soc-links li,
+.footer__links li,
+.footer__nav li,
+.header__nav-list li {
+    list-style: none;
 }
 
 .ruby_bred_crumbs::before {
@@ -106,8 +123,6 @@ body {
 
 ul.ruby_crumbs-list {
     display: flex;
-    max-width: 300px;
-    width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 
@@ -261,8 +276,11 @@ li.ruby_crumbs-item:not(:last-child):after {
 
 .ruby__content-addition-lists {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 30px;
 }
 
 .ruby__content-addition-item {
@@ -272,7 +290,7 @@ li.ruby_crumbs-item:not(:last-child):after {
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    background-color: rgba(197, 16, 16, 0.3);
+    background-color: rgba(0, 0, 0, 0.30);
     backdrop-filter: blur(10px);
     margin-bottom: 30px;
 }
@@ -296,13 +314,11 @@ li.ruby_crumbs-item:not(:last-child):after {
 
 }
 
-
-
 .ruby__content-ruby-link::before {
     content: "";
     position: absolute;
     bottom: 0;
-    right: 0px;
+    left: 0px;
     width: 300px;
     height: 1px;
     background-color: #555555;
@@ -337,6 +353,7 @@ li.ruby_crumbs-item:not(:last-child):after {
     display: flex;
     gap: 50px;
     position: relative;
+
 }
 
 .ruby__content-ruby-link {
@@ -361,6 +378,23 @@ ul.ruby__content-ruby-lists {
 
 li.ruby__content-ruby-item {
     margin-bottom: 10px;
+}
+
+.ruby__content-cost_of_delivery {
+    max-width: 795px;
+    position: relative;
+}
+
+.ruby__content-cost_of_delivery::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/ruby_sparks/bg_smoll.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 353px;
+    top: -213px;
+    right: -50%;
+    z-index: -1;
 }
 
 ul.ruby__content-cost_of_delivery-list {
@@ -540,4 +574,101 @@ label {
 
 .ruby__content-delivery_terms-item {
     text-transform: uppercase;
+}
+
+
+@media (min-width: 525px) {
+    .ruby__content-addition::after {
+        display: none;
+    }
+
+    .ruby__content-addition::before {
+        bottom: -69px;
+        right: -255px;
+        border-radius: 711px;
+        background-color: #43FFD2;
+        width: 711px;
+        height: 218px;
+    }
+
+    .ruby__content-addition {
+        margin-bottom: 100px;
+    }
+
+    .active-link {
+        margin-bottom: 30px;
+
+    }
+
+    .ruby__content-addition-item {
+        min-height: 237px;
+
+    }
+
+    .ruby__content-ruby-inner {
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+    }
+
+    .ruby__content-ruby-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ruby__content-ruby-link::before {
+        width: 716px;
+        height: 1px;
+        background-color: #555555;
+    }
+
+    .ruby__content-ruby-link.active-link::after {
+        width: 358px;
+        right: 50%;
+        left: auto;
+
+    }
+
+    .ruby__content-ruby-link.reviews-link.active-link::after {
+        width: 358px;
+        right: auto;
+        left: 50%;
+    }
+
+    .ruby__content-ruby-link {
+        font-size: 20px;
+    }
+
+    .ruby__content-cost_of_delivery::before {
+        background-image: url(../../img/ruby_sparks/bg_big.png);
+        background-size: cover;
+        width: 129%;
+        height: 952px;
+        top: -159%;
+        left: 93%;
+        z-index: -13;
+        ;
+    }
+
+    .ruby__content-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    li.ruby__content-ruby-item {
+        font-size: 20px;
+    }
+
+
+    li.ruby__content-cost_of_delivery-item {
+        font-size: 20px;
+    }
+
+    .ruby__content-delivery_terms-item {
+        font-size: 20px;
+        list-style: none;
+    }
+
 }
