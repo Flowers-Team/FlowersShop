@@ -660,12 +660,11 @@ label {
         background-image: url(../../img/ruby_sparks/bg_big.png);
         background-size: cover;
         width: 129%;
-        height: 952px;
-        top: -159%;
-        left: 93%;
+        height: 1095px;
+        top: -571px;
+        left: 90%;
         z-index: -13;
-        ;
-    }
+            }
 
     .ruby__content-title {
         font-size: 20px;
@@ -685,7 +684,13 @@ label {
         font-size: 20px;
         list-style: none;
     }
-  
+    .ruby__content-reviews-title {
+               max-width: 420px;
+       
+    }
+    .ruby__content-reviews-subtitle {
+        max-width: 420px;
+            }
 
 }
 
